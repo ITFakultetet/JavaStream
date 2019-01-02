@@ -92,11 +92,5 @@ public class Collections {
 		System.out.println("Produktet av tallene: " +  produkt);
 		
 		
-		// Lag en liste med tall og sorter dem i begge rekkefølger
-		StreamTest test = new StreamTest();
-		ArrayList<Integer> tall1 = test.liste(10);
-		test.sorter(tall1,-1).forEach((x)-> System.out.print(x+" "));
-		
-		
-	}
+		}
 }
