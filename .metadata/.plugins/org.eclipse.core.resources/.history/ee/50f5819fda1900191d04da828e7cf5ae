@@ -1,0 +1,27 @@
+package no.itfakultetet;
+
+import java.sql.SQLException;
+
+public class App2 {
+
+	public static void main(String[] args) throws SQLException {
+
+		if (args.length < 2) {
+			System.out.println("Usage: java -jar postgres.jar <database> <sql>");
+
+		} else {
+			String database = args[0];
+			String sql = args[1];
+
+			Pg pg = new Pg("server4.axenna.net", 5432, database, "terje", "terry432a");
+			pg.printDatabaseVersion();
+			pg.printSchemas();
+			// String sql1 = "INSERT INTO kontakter (fornavn,etternavn,tel,epost) VALUES
+			// ('Henrik', 'Buzzi',null,'henrik.buzzi@bouvet.no');";
+			// pg.insertRecords(sql1);
+			pg.printHtml(sql);
+		}
+
+	}
+
+}

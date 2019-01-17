@@ -1,0 +1,32 @@
+package no.itfakultetet;
+
+public class PrimitiveVariabler {
+
+	public static void main(String[] args) {
+
+		// De 8 primitive datatypene begynner med liten bokstav 
+		
+		short minShort = 23;   
+		int minInt = 123;
+		long minLong = 87634678;
+		
+		double minDouble = 2.34;
+		float minFloat = 3.4f;
+		
+		boolean minBoolean = true;
+		
+		char minChar = 'T';
+		byte minByte = 127;
+		
+		System.out.println(minShort);
+		System.out.println(minInt);
+		System.out.println(minLong);
+		System.out.println(minDouble);
+		System.out.println(minFloat);
+		System.out.println(minBoolean);
+		System.out.println(minChar);
+		System.out.println(minByte);
+		
+	}
+
+}

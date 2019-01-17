@@ -1,0 +1,34 @@
+package no.itfakultetet;
+
+public class Loops {
+
+	public static void main(String[] args) {
+
+		// while - løkke
+		System.out.println("while-løkke");
+
+		int i = 0;
+		while (i < 6) {
+			System.out.println("Verdien er: " + i);
+			i = i + 1;
+		}
+
+
+		// do while -løkke
+		System.out.println("do while-løkke");
+		i = 0;
+		do {
+			System.out.println("Verdien er: " + i);
+		} while (i < 6);
+		
+		// for - løkke
+
+		System.out.println("for-løkke");
+		for (int j = 1; j < 6; j++) {
+			System.out.println("Verdien er: " + j);
+		}
+	
+	
+	}
+
+}

@@ -1,0 +1,8 @@
+package no.itfakultetet;
+
+public class Strenger {
+	public static void main(String[] args) {
+		
+	}
+
+}

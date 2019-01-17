@@ -1,0 +1,10 @@
+INDEX VERSION 1.131+/home/terje/eclipse/java-photon/workspace/.metadata/.plugins/org.eclipse.jdt.core
+2106757511.index
+3406365120.index
+64719156.index
+3449173271.index
+482775344.index
+1595400017.index
+3579276893.index
+1623143423.index
+2234633412.index
