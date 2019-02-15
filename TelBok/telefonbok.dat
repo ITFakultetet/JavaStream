@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Telefonbok</comment>
+<entry key="Ola Nilsen">123455</entry>
+<entry key="Terje Berg-Hansen">99412656</entry>
+<entry key="Aina Berg-Hansen">47175464</entry>
+<entry key="Donald Duck">+1 123-456-789</entry>
+<entry key="Petter Holm">3454567</entry>
+</properties>
