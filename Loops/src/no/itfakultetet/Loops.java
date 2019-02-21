@@ -1,10 +1,13 @@
 package no.itfakultetet;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.List;
 
 public class Loops {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 
 		// while - løkke
 		System.out.println("while-løkke");
@@ -19,12 +22,12 @@ public class Loops {
 		System.out.println("\ndo while-løkke");
 		i = 8;
 		do {
-			if(i>6) {
+			if (i > 6) {
 				System.out.println("Verdien er større enn 6.");
 			} else {
-				System.out.println("Verdien er: " + i);	
+				System.out.println("Verdien er: " + i);
 			}
-			
+
 			i++;
 		} while (i <= 6);
 
@@ -36,7 +39,7 @@ public class Loops {
 		}
 
 		// Bla igjennom et array med for
-		
+
 		String[] dyr = { "Katt", "Hund", "Edderkopp", "Kanin" };
 
 		System.out.println("\nfor:");
@@ -49,9 +52,15 @@ public class Loops {
 
 		System.out.println("\nforEach:");
 		List<String> dyr2 = List.of("Ku", "Okse", "Gris", "Geit");
-			
+
 		dyr2.forEach(d -> System.out.println(d));
+
+		// Loop gjennom linjene i en fil med Files.lines
 		
+		Files.lines(Paths.get("/home/terje/test.txt"))
+		.filter(line -> line.startsWith("Og"))
+		.map(String::toUpperCase)
+		.forEach(System.out::println);
 
 	}
 
