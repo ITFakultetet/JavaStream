@@ -55,8 +55,6 @@ public class Loops {
 
 		dyr2.forEach(d -> System.out.println(d));
 
-		// Loop gjennom linjene i en fil med Files.lines
-
 		// Først lag en fil med litt tekst
 		try {
 			String tekst = "Dette er en tekst.\nOg dette er en linje til.\nOg dette også";
@@ -68,7 +66,9 @@ public class Loops {
 			System.out.println("Stacktrace:");
 			e.printStackTrace();
 		}
-		
+
+		// Loop gjennom linjene i en fil med Files.lines
+
 		try {
 			Files.lines(Paths.get("test.txt"))
 			.filter(line -> line.startsWith("Og"))
@@ -80,8 +80,6 @@ public class Loops {
 			e.printStackTrace();
 		}
 
-		
-		
 	}
 
 }
