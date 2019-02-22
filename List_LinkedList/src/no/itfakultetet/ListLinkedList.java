@@ -3,7 +3,6 @@ package no.itfakultetet;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-import java.util.function.ToDoubleFunction;
 
 public class ListLinkedList {
 
@@ -20,7 +19,7 @@ public class ListLinkedList {
 //		Tar vi bort 0, legges nye rader til fra slutten, og det er liten forskjell
 		
 		for (int i = 0; i < 3e5; i++) {
-			tall1.add(0, i);
+			tall2.add(0, i);
 
 		}
 
