@@ -1,13 +1,13 @@
 package no.itfakultetet;
 
-import java.io.IOException;
+import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
 public class Loops {
 
-	public static void main(String[] args) throws IOException {
+	public static void main(String[] args) {
 
 		// while - løkke
 		System.out.println("while-løkke");
@@ -56,12 +56,32 @@ public class Loops {
 		dyr2.forEach(d -> System.out.println(d));
 
 		// Loop gjennom linjene i en fil med Files.lines
-		
-		Files.lines(Paths.get("/home/terje/test.txt"))
-		.filter(line -> line.startsWith("Og"))
-		.map(String::toUpperCase)
-		.forEach(System.out::println);
 
+		// Først lag en fil med litt tekst
+		try {
+			String tekst = "Dette er en tekst.\nOg dette er en linje til.\nOg dette også";
+			FileWriter fil = new FileWriter("test.txt");
+			fil.write(tekst);
+			fil.close();
+		} catch (Exception e) {
+			System.out.println("Kunne ikke opprette eller skrive til filen fordi: " + e);
+			System.out.println("Stacktrace:");
+			e.printStackTrace();
+		}
+		
+		try {
+			Files.lines(Paths.get("test.txt"))
+			.filter(line -> line.startsWith("Og"))
+			.map(String::toUpperCase)
+			.forEach(System.out::println);
+		} catch (Exception e) {
+			System.out.println("Noe gikk galt fordi: " + e);
+			System.out.println("Stacktrace:");
+			e.printStackTrace();
+		}
+
+		
+		
 	}
 
 }
