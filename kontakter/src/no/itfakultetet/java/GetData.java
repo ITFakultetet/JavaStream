@@ -10,12 +10,6 @@ public class GetData {
 	
 	public ResultSet getRows() {
         
-		try {
-			Class.forName("org.postgresql.Driver");
-		} catch (ClassNotFoundException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
 		
 		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://s1.itfakultetet.no:5432/kurs", "kurs", "kurs123")) { 
             Statement statement = connection.createStatement();
