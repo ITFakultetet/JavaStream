@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Rename type &apos;no.itfakultetet.PrimitiveVariabler&apos; to &apos;PrimitiveDataTyper&apos;&#x0A;- Original project: &apos;Introduksjon&apos;&#x0A;- Original element: &apos;no.itfakultetet.PrimitiveVariabler&apos;&#x0A;- Renamed element: &apos;no.itfakultetet.PrimitiveDataTyper&apos;&#x0A;- Update references to refactored element&#x0A;- Rename similarly named elements&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;PrimitiveVariabler&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;no.itfakultetet{PrimitiveVariabler.java[PrimitiveVariabler" matchStrategy="1" name="PrimitiveDataTyper" qualified="false" references="true" similarDeclarations="true" stamp="1547721276493" textual="false" version="1.0"/>
-</session>
