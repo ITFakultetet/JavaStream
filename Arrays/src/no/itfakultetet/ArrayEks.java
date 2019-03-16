@@ -1,15 +1,29 @@
 package no.itfakultetet;
 
-public class Arrays {
+import java.util.*;
+
+public class ArrayEks {
 
 	public static void main(String[] args) {
 
 		int[] tall = { 12, 34, 2, 67 };
 
+		// Med for-løkke
 		for (int i = 0; i < tall.length; i++) {
 			System.out.println(tall[i]);
 		}
+		
+		System.out.println("------------");
+		// Med forbedret for-løkke
+		for (int i : tall) {
+			System.out.println(i);
+		}
+		System.out.println("------------");
+		// med stream api:
+		Arrays.stream(tall).forEach(System.out::println);
 
+		System.out.println("------------");
+		// Array med tekst
 		String[] tekst = new String[3];
 		tekst[0] = "Dette er tekst 1";
 		tekst[2] = "Dette er tekst 3";
@@ -92,9 +106,6 @@ public class Arrays {
 
 		System.out.println("--------------------------------------");
 
-	}
+	} // end main
 
-	
-    
-	
-}
+} // end class
