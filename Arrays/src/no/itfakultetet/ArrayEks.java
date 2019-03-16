@@ -1,6 +1,7 @@
 package no.itfakultetet;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.stream.Collectors;
 
 public class ArrayEks {
 
@@ -19,10 +20,16 @@ public class ArrayEks {
 			System.out.println(i);
 		}
 		System.out.println("------------");
+
 		// med stream api:
 		Arrays.stream(tall).forEach(System.out::println);
-
+		
+		// Gange hvert tall med 2 og skrive ut resultatet
+		System.out.println("Hvert tall ganger 2");
+		Arrays.stream(tall).map(x -> x*2).forEach(System.out::println);
+		
 		System.out.println("------------");
+		
 		// Array med tekst
 		String[] tekst = new String[3];
 		tekst[0] = "Dette er tekst 1";
@@ -32,14 +39,13 @@ public class ArrayEks {
 			System.out.println("Element " + (i + 1) + ": " + tekst[i]);
 		}
 
-//		System.out.println(tekst.toString());
-
 		tekst[1] = "Dette er ny tekst i element 2";
 
 		System.out.println(tekst[1]);
 
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
+
 		String[][] tabell = new String[3][3];
 
 		tabell[0][0] = "Donald";
@@ -91,13 +97,14 @@ public class ArrayEks {
 		System.out.println();
 
 		System.out.println("\nTabell med to forbedrede for-løkker");
-
 		System.out.println("--------------------------------------");
+		
 		// Skriv ut formattert utskrift med printf()
 		System.out.printf("%-12s%-12s%-12s", "Fornavn", "Etternavn", "Epost");
+		
 		System.out.println();
-		for (String[] rad : tabell) {
-			for (String kollonne : rad) {
+		for (String[] rad : tabell) {  // Bla gjennom rader
+			for (String kollonne : rad) { // Bla gjennom kollonner
 				System.out.printf("%-12s", kollonne);
 			}
 			System.out.println();
@@ -106,6 +113,18 @@ public class ArrayEks {
 
 		System.out.println("--------------------------------------");
 
+		// Med Stream api
+		// Skriv ut antall rader
+		
+		System.out.println("Antal rader: "+ Arrays.stream(tabell).count());
+		
+		Arrays.stream(tabell).map(a -> a).forEach(System.out::println);
+				
+		
+		
+		
+		
+		
 	} // end main
 
 } // end class
