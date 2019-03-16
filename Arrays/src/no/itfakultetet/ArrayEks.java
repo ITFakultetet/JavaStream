@@ -1,4 +1,4 @@
-package no.itfakultetet;
+package no.itfakultetet;	
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -15,6 +15,7 @@ public class ArrayEks {
 		}
 		
 		System.out.println("------------");
+		
 		// Med forbedret for-løkke
 		for (int i : tall) {
 			System.out.println(i);
@@ -40,9 +41,25 @@ public class ArrayEks {
 		}
 
 		tekst[1] = "Dette er ny tekst i element 2";
-
 		System.out.println(tekst[1]);
 
+		System.out.println();
+		
+		System.out.println("Array med tillagt tekst i element 2: ");
+		
+		for (String linje : tekst) {
+			System.out.println(linje);
+		}
+		
+		
+		// Skriv bare ut elementer med  ordet "ny"
+		System.out.println("------------");
+		
+		System.out.println("Skriv bare ut elementer med  ordet \"ny\"");
+		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
+		
+		
+		
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
 
