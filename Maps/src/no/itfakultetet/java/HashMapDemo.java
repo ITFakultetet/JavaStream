@@ -1,6 +1,8 @@
 package no.itfakultetet.java;
 
+import java.util.Comparator;
 import java.util.HashMap;
+import java.util.Map;
 
 public class HashMapDemo {
 
@@ -26,7 +28,7 @@ public class HashMapDemo {
 
 		// Gammel måte å bla gjennom en map på
 		System.out.println("Gammel måte å bla gjennom en map på");
-		
+
 		for (int key : map1.keySet()) {
 			System.out.println(key + " : " + map1.get(key));
 		}
@@ -35,19 +37,24 @@ public class HashMapDemo {
 		System.out.println("\nNy, enklere måte å bla gjennom en map på med stream api:");
 
 		map1.entrySet().forEach(System.out::println);
-		
+
 		// Eller med formatering
 		System.out.println("\nPrint ut map med formatering via lambda-funksjon:\n");
-		
-		map1.forEach((k, v) -> System.out.println("Nøkkel: "+ k + " har verdien: " + v));
 
-		// Filtrer ut verdier med stream() og filter() 
-		System.out.println("Print ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
-		map1.entrySet().stream().filter(a -> a.getValue().contains("6")).forEach(System.out::println);;
-		
+		map1.forEach((k, v) -> System.out.println("Nøkkel: " + k + " har verdien: " + v));
+
+		System.out.println();
+
+		// Filtrer ut verdier med stream() og filter()
+		System.out.println("Bruk stream() og filer() til å printe ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
+		map1.entrySet().stream().filter(a -> a.getValue().contains("6")).forEach(System.out::println);
+
+		System.out.println();
+
+		// Sortere en Map etter verdi og printe ut:
+		System.out.println("Sortere en Map etter verdi og printe ut");
+		map1.entrySet().stream().sorted(Map.Entry.comparingByValue()).forEach(System.out::println);
+
 	}
-	
-	
-	
 
 }
