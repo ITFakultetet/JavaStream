@@ -1,8 +1,6 @@
 package no.itfakultetet.java;
 
 import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
 
 public class HashMapDemo {
 
@@ -43,6 +41,13 @@ public class HashMapDemo {
 		
 		map1.forEach((k, v) -> System.out.println("Nøkkel: "+ k + " har verdien: " + v));
 
+		// Filtrer ut verdier med stream() og filter() 
+		System.out.println("Print ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
+		map1.entrySet().stream().filter(a -> a.getValue().contains("6")).forEach(System.out::println);;
+		
 	}
+	
+	
+	
 
 }
