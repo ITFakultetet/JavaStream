@@ -4,6 +4,7 @@ import java.io.FileWriter;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
+import java.util.Map;
 
 public class Loops {
 
@@ -47,14 +48,21 @@ public class Loops {
 			System.out.println(dyret);
 		}
 
-		// Java 10+: forEach-løkke med List-literal- som kan brukes til alt som kan blas
-		// igjennom (iterables)
+		// Java 10+: forEach-løkke med List.of og Map.entrySet.of()- - som lager ojekter som er "immutable" (som ikke kan endres) .
 
-		System.out.println("\nforEach:");
+		System.out.println("\nList med forEach:");
 		List<String> dyr2 = List.of("Ku", "Okse", "Gris", "Geit");
 
-		dyr2.forEach(d -> System.out.println(d));
+		dyr2.forEach(System.out::println);
 
+		System.out.println("\nMap entrySet med forEach:");
+		Map<String,String> dyr3 = Map.ofEntries(Map.entry("Dagros","Ku"), 
+				Map.entry("Ferdinand","Okse"), Map.entry("Miss Piggy","Gris"), Map.entry("Bukken","Geit"));
+
+		dyr3.entrySet().forEach(System.out::println);
+
+		// Løkke som blar igjennom linjer i en tekstfil
+		
 		// Først lag en fil med litt tekst
 		try {
 			String tekst = "Dette er en tekst.\nOg dette er en linje til.\nOg dette også";
