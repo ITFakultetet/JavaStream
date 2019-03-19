@@ -54,6 +54,8 @@ public class Sets {
 		
 		System.out.println();
 		
+		
+		
 		// Java 11 - immutable sett med Set.of()
 
 		Set<Integer> sett1 = Set.of(2, 8, 5, 9, 34, 12, 67, 23, 78);
@@ -69,7 +71,11 @@ public class Sets {
 		System.out.println("Summen av tallene i sett1 er: " + sett1.stream().mapToInt(a -> a).sum());
 
 		System.out.println("Produktet av tallene i sett1 er: " + sett1.stream().reduce((a, b) -> a * b).get());
-
+		System.out.println("Høyeste tall i sett1 er: " + sett1.stream().max(Comparator.naturalOrder()).get());
+		System.out.println("Laveste tall i sett1 er: " + sett1.stream().min(Comparator.naturalOrder()).get());
+		
+		System.out.println();
+		
 		System.out.print("Sett1 sortert: ");
 		sett1.stream().sorted().forEach(a -> System.out.print(a + " "));
 
