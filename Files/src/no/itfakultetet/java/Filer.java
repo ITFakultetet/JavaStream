@@ -1,6 +1,9 @@
 package no.itfakultetet.java;
 
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.io.FileWriter;
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Filer {
@@ -15,13 +18,17 @@ public class Filer {
 			System.out.println("Noe gikk galt under oppretting av fil.txt, fordi: " + e);
 		}
 
-		Scanner sc1 = new Scanner("fil.txt");
-		
-		 while (sc1.hasNextLine()) {
-			System.out.println(sc1.nextLine()); 
+		try (FileReader lesfil = new FileReader("fil.txt")) {
+			System.out.println("Innholdet av \"fil.txt\":");
+			Scanner sc1 = new Scanner(lesfil);
+			while (sc1.hasNextLine()) {
+				System.out.println(sc1.nextLine());
+			}
+			sc1.close();
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
-		
-		sc1.close();
+
 	}
 
 }
