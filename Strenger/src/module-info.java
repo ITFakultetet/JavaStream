@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author terjebh
+ *
+ */
+module Strenger {
+}
