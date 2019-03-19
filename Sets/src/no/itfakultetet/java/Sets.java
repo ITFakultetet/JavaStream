@@ -2,7 +2,9 @@ package no.itfakultetet.java;
 
 import java.util.Comparator;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class Sets {
 
@@ -37,6 +39,21 @@ public class Sets {
 
 		hsett.forEach(System.out::println);
 
+		System.out.println();
+		
+		// TreeSet - sett som sorterer automatisk
+		
+		TreeSet<String> tsett = new TreeSet<>();
+		
+		// Legg til flere navn med addAll()
+		tsett.addAll(List.of("Ola","Petter","Åge","Kari","Eva"));
+		
+		// Skriv ut elementene i tsett
+		System.out.println("Elementene i tsett er sortert alfabetisk: ");
+		System.out.println(tsett);
+		
+		System.out.println();
+		
 		// Java 11 - immutable sett med Set.of()
 
 		Set<Integer> sett1 = Set.of(2, 8, 5, 9, 34, 12, 67, 23, 78);
