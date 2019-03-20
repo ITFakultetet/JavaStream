@@ -6,7 +6,7 @@ import java.sql.SQLException;
 public class App2 {  
 
 	public static void main(String[] args) {
-
+ 
 		
 		GetData2 data = new GetData2();
 		ResultSet resultSet = data.getRows();

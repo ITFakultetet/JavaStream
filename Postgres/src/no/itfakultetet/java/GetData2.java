@@ -6,7 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-public class GetData2 {
+public class GetData2 { 
 
 	public ResultSet getRows() {
   
