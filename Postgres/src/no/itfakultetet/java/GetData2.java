@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class GetData2 {
 
 	public ResultSet getRows() {
-
+  
 		try (Connection connection = DriverManager.getConnection("jdbc:postgresql://s1.itfakultetet.no:5432/terje",
 				"kurs", "kurs123")) {
 
