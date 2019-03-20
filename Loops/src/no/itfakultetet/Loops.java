@@ -48,7 +48,8 @@ public class Loops {
 			System.out.println(dyret);
 		}
 
-		// Java 10+: forEach-løkke med List.of og Map.entrySet.of()- - som lager ojekter som er "immutable" (som ikke kan endres) .
+		// Java 10+: forEach-løkke med List.of og Map.entrySet.of()- - som lager ojekter
+		// som er "immutable" (som ikke kan endres) .
 
 		System.out.println("\nList med forEach:");
 		List<String> dyr2 = List.of("Ku", "Okse", "Gris", "Geit");
@@ -56,13 +57,13 @@ public class Loops {
 		dyr2.forEach(System.out::println);
 
 		System.out.println("\nMap entrySet med forEach:");
-		Map<String,String> dyr3 = Map.ofEntries(Map.entry("Dagros","Ku"), 
-				Map.entry("Ferdinand","Okse"), Map.entry("Miss Piggy","Gris"), Map.entry("Bukken","Geit"));
+		Map<String, String> dyr3 = Map.ofEntries(Map.entry("Dagros", "Ku"), Map.entry("Ferdinand", "Okse"),
+				Map.entry("Miss Piggy", "Gris"), Map.entry("Bukken", "Geit"));
 
 		dyr3.entrySet().forEach(System.out::println);
 
 		// Løkke som blar igjennom linjer i en tekstfil
-		
+
 		// Først lag en fil med litt tekst
 		try {
 			String tekst = "Dette er en tekst.\nOg dette er en linje til.\nOg dette også";
@@ -78,10 +79,8 @@ public class Loops {
 		// Loop gjennom linjene i en fil med Files.lines
 
 		try {
-			Files.lines(Paths.get("test.txt"))
-			.filter(line -> line.startsWith("Og"))
-			.map(String::toUpperCase)
-			.forEach(System.out::println);
+			Files.lines(Paths.get("test.txt")).filter(line -> line.startsWith("Og")).map(String::toUpperCase)
+					.forEach(System.out::println);
 		} catch (Exception e) {
 			System.out.println("Noe gikk galt fordi: " + e);
 			System.out.println("Stacktrace:");
