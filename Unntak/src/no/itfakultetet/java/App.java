@@ -21,6 +21,15 @@ public class App {
 			// System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
+	
+		
+		try {
+			test1.run("null");
+		} catch (IOException e) {
+			// System.out.println(e.getMessage());
+			e.printStackTrace();
+		}
+	
 		
 	}
 
