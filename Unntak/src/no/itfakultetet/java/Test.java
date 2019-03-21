@@ -6,7 +6,7 @@ public class Test {
 
 
 	public void run(int i) throws IOException {
-
+		// Test at argumentet er lik 0, hvis ikke gi feilmelding
 		if (i == 0) {
 			System.out.println("Testen var vellykket!");
 		} else {
