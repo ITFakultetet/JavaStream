@@ -11,6 +11,12 @@ public class Tall {
 		double tall1 = 34.2356;
 		int tall2 = 6;
 		float tall3 = 3.67f;
+
+		
+		// Elementære regneopreasjoner
+		
+		System.out.println("("+tall1+" + "+tall2+")*"+ tall3 +" = "+ (tall1+tall2)*tall3);
+		
 		
 		// Avrunding av tall
 
