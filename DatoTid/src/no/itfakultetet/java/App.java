@@ -2,6 +2,7 @@ package no.itfakultetet.java;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
@@ -26,24 +27,24 @@ public class App {
 		LocalDate generalforsamling = LocalDate.of(2019, 2, 23);
 		LocalDate utsattGeneralforsamling = generalforsamling.plusMonths(3);
 
-		System.out.println("Generalforsamlingen utsettes fra: " + generalforsamling + " til: " + utsattGeneralforsamling);
+		System.out
+				.println("Generalforsamlingen utsettes fra: " + generalforsamling + " til: " + utsattGeneralforsamling);
 
-		// Ukedag med ulike språk 
+		// Ukedag med ulike språk
 		LocalDate kursstart = LocalDate.parse("2019-03-25");
 		DayOfWeek kursstartUkedag = LocalDate.parse("2019-03-25").getDayOfWeek();
-		System.out.println("Course is starting: "+kursstartUkedag);
-		
+		System.out.println("Course is starting: " + kursstartUkedag);
+
 		// På norsk
-		Locale bokmaal=new Locale("nb", "NO");
-		Locale nynorsk=new Locale("nn", "NO");
-	
-		String kursstartNB=kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy",bokmaal));
-		String kursstartNN=kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy",nynorsk));
-		
-		System.out.println("Kurset starter på : "+kursstartNB);
-		System.out.println("Kurset startar på : "+kursstartNN);
-		
-		
+		Locale bokmaal = new Locale("nb", "NO");
+		Locale nynorsk = new Locale("nn", "NO");
+
+		String kursstartNB = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", bokmaal));
+		String kursstartNN = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", nynorsk));
+
+		System.out.println("Kurset starter på : " + kursstartNB);
+		System.out.println("Kurset startar på : " + kursstartNN);
+
 		// Beregn alder ut fra fødselsdato med Period.between(startDateInclusive,
 		// endDateExclusive));
 
@@ -65,6 +66,17 @@ public class App {
 		System.out.println("Mors alder 13. november 1955: " + alder13nov1955);
 		
 		
+		System.out.println("\nDato og Tid\n");
+		
+		// Eksempler på bruk av LocalDateTime
+		
+		LocalDateTime nå = LocalDateTime.now();
+		System.out.println("Nå er: "+nå);
+		System.out.println("Om tre timer er: "+nå.plusHours(3));
+		System.out.println("Nå formattert: Kl. "+nå.format(DateTimeFormatter.ofPattern("HH:mm:ss, EEEE dd. MMMM, yyyy", bokmaal)));
+		
+		
+
 	}
 
 }
