@@ -65,7 +65,7 @@ public class Ord {
 
 			while ((input = br.readLine()) != null) {
 
-				String ord[] = input.split("[?\t()*.,;:!'\n\r{} ]");
+				String ord[] = input.split("[?\t()*.,;:!'\n\r{}” ]");
 
 				for (int i = 0; i < ord.length; i++) {
 
