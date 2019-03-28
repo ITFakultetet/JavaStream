@@ -13,7 +13,7 @@ public class App {
 		// Sjekk at det gis ett argument til programmet eller opplys om bruken
 		
 		if (args.length != 1) {
-			System.out.println("Bruk: java -Jar Ord.jar <tekstfil>");
+			System.out.println("Bruk: java -Jar ord.jar <tekstfil>");
 			System.exit(0);
 		}
 
@@ -21,15 +21,15 @@ public class App {
 		// Hent filnavnet fra kommandolinjens første argument (det første vi
 		// skriver inn) og lagre filnavnet i variablen fil
 
-		String fil;
-		fil = args[0];
+		String fil = args[0];
 
 		// Instansier et Ord-objekt
 		Ord ord = new Ord();
+		
 		ord.setFil(fil);
 		
 		// Les inn filen fra argumentet til programmet og gi en melding om at vi behandler filen
-		System.out.println("Behandler " + ord.getFil());
+		System.out.println("Behandler filen: " + ord.getFil());
 		
 		// start en tidtaker
 		Long start = System.currentTimeMillis();
@@ -48,7 +48,13 @@ public class App {
 
 		Long stop = System.currentTimeMillis();
 		Double tid = (stop-start)/1000.0;
+		
+		System.out.println("Filen "+ord.getFil()+" inneholder "+tre.size()+" unike ord.");
+		System.out.println("De 10 ordene som forekommer hyppigst er: ");
+		sortert.entrySet().stream().limit(10).forEach(k-> System.out.print(k+" "));
+		System.out.println();
 		System.out.println("Filene "+ord.getUtfil1()+" og "+ord.getUtfil2()+" ble skrevet på "+tid+" sekunder");
 	}
+	
 
 }

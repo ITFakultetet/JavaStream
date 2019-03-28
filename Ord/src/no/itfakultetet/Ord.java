@@ -54,9 +54,10 @@ public class Ord {
 
 	}
 
-	// Metode for å lese en fil inn i en TreeMap
+	// Metode for å lese en fil inn i en TreeMap hvor ord kan telles opp
 	public Map<String, Integer> lesFil(String fil) {
-		TreeMap<String, Integer> tre1 = new TreeMap<String, Integer>();
+
+		TreeMap<String, Integer> tre1 = new TreeMap<>();
 
 		try (BufferedReader br = new BufferedReader(new FileReader(fil))) {
 
@@ -67,11 +68,14 @@ public class Ord {
 				String ord[] = input.split("[?\t()*.,;:!'\n\r{} ]");
 
 				for (int i = 0; i < ord.length; i++) {
-					ord[i] = ord[i].toLowerCase();
-					if (tre1.containsKey(ord[i])) {
-						tre1.put(ord[i], tre1.get(ord[i]) + 1);
-					} else {
-						tre1.put(ord[i], 1);
+
+					if (!ord[i].isEmpty()) {
+						ord[i] = ord[i].toLowerCase();
+						if (tre1.containsKey(ord[i])) {
+							tre1.put(ord[i], tre1.get(ord[i]) + 1);
+						} else {
+							tre1.put(ord[i], 1);
+						}
 					}
 				}
 			}
