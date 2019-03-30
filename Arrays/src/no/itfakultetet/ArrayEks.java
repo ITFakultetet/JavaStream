@@ -1,4 +1,4 @@
-package no.itfakultetet;	
+package no.itfakultetet;
 
 import java.util.Arrays;
 import java.util.stream.Collectors;
@@ -13,9 +13,9 @@ public class ArrayEks {
 		for (int i = 0; i < tall.length; i++) {
 			System.out.println(tall[i]);
 		}
-		
+
 		System.out.println("------------");
-		
+
 		// Med forbedret for-løkke
 		for (int i : tall) {
 			System.out.println(i);
@@ -24,13 +24,13 @@ public class ArrayEks {
 
 		// med stream api:
 		Arrays.stream(tall).forEach(System.out::println);
-		
+
 		// Gange hvert tall med 2 og skrive ut resultatet
 		System.out.println("Hvert tall ganger 2");
-		Arrays.stream(tall).map(x -> x*2).forEach(System.out::println);
-		
+		Arrays.stream(tall).map(x -> x * 2).forEach(System.out::println);
+
 		System.out.println("------------");
-		
+
 		// Array med tekst
 		String[] tekst = new String[3];
 		tekst[0] = "Dette er tekst 1";
@@ -44,22 +44,19 @@ public class ArrayEks {
 		System.out.println(tekst[1]);
 
 		System.out.println();
-		
+
 		System.out.println("Array med tillagt tekst i element 2: ");
-		
+
 		for (String linje : tekst) {
 			System.out.println(linje);
 		}
-		
-		
-		// Skriv bare ut elementer med  ordet "ny"
+
+		// Skriv bare ut elementer med ordet "ny"
 		System.out.println("------------");
-		
+
 		System.out.println("Skriv bare ut elementer med  ordet \"ny\"");
 		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
-		
-		
-		
+
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
 
@@ -115,12 +112,12 @@ public class ArrayEks {
 
 		System.out.println("\nTabell med to forbedrede for-løkker");
 		System.out.println("--------------------------------------");
-		
+
 		// Skriv ut formattert utskrift med printf()
 		System.out.printf("%-12s%-12s%-12s", "Fornavn", "Etternavn", "Epost");
-		
+
 		System.out.println();
-		for (String[] rad : tabell) {  // Bla gjennom rader
+		for (String[] rad : tabell) { // Bla gjennom rader
 			for (String kollonne : rad) { // Bla gjennom kollonner
 				System.out.printf("%-12s", kollonne);
 			}
@@ -132,16 +129,11 @@ public class ArrayEks {
 
 		// Med Stream api
 		// Skriv ut antall rader
-		
-		System.out.println("Antal rader: "+ Arrays.stream(tabell).count());
-		
-		Arrays.stream(tabell).map(a -> a).forEach(System.out::println);
-				
-		
-		
-		
-		
-		
+
+		System.out.println("Antal rader: " + Arrays.stream(tabell).count());
+
+		Arrays.stream(tabell).map(a -> a[0]+" "+a[1]+" "+a[2]).forEach(System.out::println);
+
 	} // end main
 
 } // end class
