@@ -21,7 +21,8 @@ public class Filer {
 			System.out.println("Noe gikk galt under oppretting av fil.txt, fordi: " + e);
 		}
 
-		// Les fil med FileReader og Scanner
+		// 1
+		// Les fil med FileReader og BufferedReader
 
 		System.out.println("Les filen med FileReader og BufferedReader og skriv den ut til skjermen:\n");
 
@@ -41,6 +42,8 @@ public class Filer {
 		
 		System.out.println("--------------------------------");
 		
+		
+		// 2
 		// Les fil med FileInputStream
 
 		System.out.println("Les filen med FileInputStream og Scanner og skriv den ut til skjermen:\n");
@@ -59,9 +62,24 @@ public class Filer {
 		
 		System.out.println("--------------------------------");
 		
+		// 3
 		// Les filen med Files.lines()
 		// Loop gjennom linjene i en fil med Files.lines
 
+		// 3a
+		System.out.println("Les filen med Files.lines() og skriv den ut til skjermen:\n");
+
+		try {
+			Files.lines(Paths.get("fil.txt")).forEach(System.out::println);
+		} catch (Exception e) {
+			System.out.println("Noe gikk galt fordi: " + e);
+			System.out.println("Stacktrace:");
+			e.printStackTrace();
+		}
+
+		System.out.println("--------------------------------");
+		
+		// 3b
 		System.out.println("Bruk Files.lines() til å skrive ut linjer som begynner med \"Og\" med store bokstaver: \n");
 
 		try {
