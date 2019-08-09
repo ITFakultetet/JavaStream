@@ -1,45 +1,55 @@
 package no.itfakultetet;
 
 import java.util.Arrays;
-import java.util.stream.Collectors;
 
 public class ArrayEks {
 
 	public static void main(String[] args) {
-
+	
+		// Lag et enkelt array - tall - bestående av elementer av typen heltall 
 		int[] tall = { 12, 34, 2, 67 };
 
-		// Med for-løkke
+		// Skriv ut med for-løkke
+		System.out.println("Med for-løkke");
 		for (int i = 0; i < tall.length; i++) {
 			System.out.println(tall[i]);
 		}
-
 		System.out.println("------------");
 
-		// Med forbedret for-løkke
+
+		// Skriv ut med forbedret for-løkke
+		System.out.println("Med forbedret for-løkke");
 		for (int i : tall) {
 			System.out.println(i);
 		}
 		System.out.println("------------");
-
-		// med stream api:
+		
+		// Skriv ut med Arrays.stream().forEach:
+		System.out.println("Med Arrays.stream().forEach");
 		Arrays.stream(tall).forEach(System.out::println);
-
-		// Gange hvert tall med 2 og skrive ut resultatet
-		System.out.println("Hvert tall ganger 2");
-		Arrays.stream(tall).map(x -> x * 2).forEach(System.out::println);
-
 		System.out.println("------------");
 
+		// Gange hvert tall med 2 og skrive ut resultatet
+		System.out.println("Hvert tall ganger 2, skrevet ut med map() og forEach()");
+		Arrays.stream(tall).map(x -> x * 2).forEach(System.out::println);
+		System.out.println("------------");
+
+		
 		// Array med tekst
+		// Lag et array med new String[<tall>]
 		String[] tekst = new String[3];
+		
 		tekst[0] = "Dette er tekst 1";
 		tekst[2] = "Dette er tekst 3";
 
+		// Skriv ute arrayet med en for-løkke
+		System.out.println("Tekst-array skrevet ut med en for-løkke");
 		for (int i = 0; i < tekst.length; i++) {
 			System.out.println("Element " + (i + 1) + ": " + tekst[i]);
 		}
 
+		System.out.println("-------------");
+		System.out.println("Legg til tekst i element 2:");
 		tekst[1] = "Dette er ny tekst i element 2";
 		System.out.println(tekst[1]);
 
@@ -54,12 +64,13 @@ public class ArrayEks {
 		// Skriv bare ut elementer med ordet "ny"
 		System.out.println("------------");
 
-		System.out.println("Skriv bare ut elementer med  ordet \"ny\"");
+		System.out.println("Skriv bare ut elementer sin inneholder ordet \"ny\" ved bruk av stream().filter().forEach()");
 		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
 
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
 
+		System.out.println();
 		String[][] tabell = new String[3][3];
 
 		tabell[0][0] = "Donald";
