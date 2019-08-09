@@ -23,7 +23,7 @@ public class Filer {
 
 		// Les fil med FileReader og Scanner
 
-		System.out.println("Les filen med FileReader BufferedReader og skriv den ut til skjermen:\n");
+		System.out.println("Les filen med FileReader og BufferedReader og skriv den ut til skjermen:\n");
 
 			try (FileReader lesfil = new FileReader("fil.txt")) {
 			System.out.println("Innholdet av \"fil.txt\":");
