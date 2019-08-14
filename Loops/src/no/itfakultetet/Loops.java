@@ -16,7 +16,7 @@ public class Loops {
 		int i = 0;
 		while (i < 6) {
 			System.out.println("Verdien er: " + i);
-			i = i + 1;
+			i++;  // Det samme som: i = i + 1
 		}
 
 		// do while -løkke (kjøre alltid minst 1 gang)
