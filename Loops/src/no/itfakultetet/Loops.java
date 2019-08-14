@@ -21,7 +21,7 @@ public class Loops {
 
 		// do while -løkke (kjøre alltid minst 1 gang)
 		System.out.println("\ndo while-løkke");
-		i = 8;
+		i = 10;
 		do {
 			if (i > 6) {
 				System.out.println("Verdien er større enn 6.");
@@ -48,7 +48,7 @@ public class Loops {
 			System.out.println(dyret);
 		}
 
-		// Java 10+: forEach-løkke med List.of og Map.entrySet.of()- - som lager ojekter
+		// Java 10+: forEach-løkke med List.of og Map.entrySet.of() -- som lager objekter
 		// som er "immutable" (som ikke kan endres) .
 
 		System.out.println("\nList med forEach:");
@@ -61,12 +61,14 @@ public class Loops {
 				Map.entry("Miss Piggy", "Gris"), Map.entry("Bukken", "Geit"));
 
 		dyr3.entrySet().forEach(System.out::println);
+		
+		System.out.println("-------------");
 
 		// Løkke som blar igjennom linjer i en tekstfil
 
 		// Først lag en fil med litt tekst
 		try {
-			String tekst = "Dette er en tekst.\nOg dette er en linje til.\nOg dette også";
+			String tekst = "Dette er en tekst i en fil.\nOg dette er en linje til fra en fil.\nOg dette også";
 			FileWriter fil = new FileWriter("test.txt");
 			fil.write(tekst);
 			fil.close();
