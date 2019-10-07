@@ -18,7 +18,9 @@ public class ConstructorsApp {
 		System.out.println("Maskin1 er en "+maskin1.getType() +" som heter: "+maskin1.getNavn());
 		System.out.println("Maskin2 heter: "+maskin2.getNavn());
 		System.out.println("Maskin3 har vekt: "+maskin3.getVekt());
+		
 		maskin4.setType("Liten gravemaskin");
+		
 		System.out.println("Maskin4 heter: "+maskin4.getNavn()
 		+ " og har vekt "+maskin4.getVekt()+"kg og er en "+maskin4.getType());
 		
