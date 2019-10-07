@@ -12,7 +12,7 @@ public class ConstructorsApp {
 		System.out.println("----------");
 		Machine maskin4 = new Machine("Bobcat",4500);
 		System.out.println("----------");
-		
+		 
 		maskin1.setNavn("Kari");
 
 		System.out.println("Maskin1 er en "+maskin1.getType() +" som heter: "+maskin1.getNavn());
