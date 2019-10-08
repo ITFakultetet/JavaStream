@@ -1,13 +1,14 @@
 package no.itfakultetet;
 
 import java.util.Arrays;
+import java.util.Comparator;
 
 public class ArrayEks {
 
 	public static void main(String[] args) {
-	
-		// Lag et enkelt array - tall - bestående av elementer av typen heltall 
-		int[] tall = { 12, 34, 2, 67 };
+
+		// Lag et enkelt array - tall - bestående av elementer av typen heltall
+		Integer[] tall = { 12, 34, 2, 67 };
 
 		// Skriv ut med for-løkke
 		System.out.println("Med for-løkke");
@@ -16,34 +17,33 @@ public class ArrayEks {
 		}
 		System.out.println("------------");
 
-
 		// Skriv ut med forbedret for-løkke
 		System.out.println("Med forbedret for-løkke");
 		for (int i : tall) {
 			System.out.println(i);
 		}
 		System.out.println("------------");
-		
+
 		// Skriv ut med Arrays.stream().forEach:
 		System.out.println("Med Arrays.stream().forEach");
 		Arrays.stream(tall).forEach(System.out::println);
 		System.out.println("------------");
 
 		// Gange hvert tall med 2 og skrive ut resultatet
-		System.out.println("Hvert tall ganger 2, skrevet ut med map() og forEach()");
-		Arrays.stream(tall).map(x -> x * 2).forEach(System.out::println);
+		System.out.println("Hvert tall ganger 2, sortert i synkende rekkefølge og skrevet ut med map() og forEach()");
+		Arrays.stream(tall).sorted(Comparator.reverseOrder()).map(x -> x * 2).forEach(System.out::println);
 		System.out.println("------------");
 
-		
 		// Array med tekst
 		// Lag et array med new String[<tall>]
 		String[] tekst = new String[3];
-		
+
 		tekst[0] = "Dette er tekst 1";
 		tekst[2] = "Dette er tekst 3";
 
 		// Skriv ute arrayet med en for-løkke
 		System.out.println("Tekst-array skrevet ut med en for-løkke");
+		
 		for (int i = 0; i < tekst.length; i++) {
 			System.out.println("Element " + (i + 1) + ": " + tekst[i]);
 		}
@@ -64,8 +64,11 @@ public class ArrayEks {
 		// Skriv bare ut elementer med ordet "ny"
 		System.out.println("------------");
 
-		System.out.println("Skriv bare ut elementer sin inneholder ordet \"ny\" ved bruk av stream().filter().forEach()");
+		System.out
+				.println("Skriv bare ut elementer sin inneholder ordet \"ny\" ved bruk av stream().filter().forEach()");
 		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
+
+		System.out.println("Antall elementer i tekst-Arrayet: "+Arrays.stream(tekst).count());
 
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
@@ -141,9 +144,9 @@ public class ArrayEks {
 		// Med Stream api
 		// Skriv ut antall rader
 
-		System.out.println("Antal rader: " + Arrays.stream(tabell).count());
+		System.out.println("Antal rader i tabellen: " + Arrays.stream(tabell).count());
 
-		Arrays.stream(tabell).map(a -> a[0]+" "+a[1]+" "+a[2]).forEach(System.out::println);
+		Arrays.stream(tabell).map(a -> a[0] + "\t" + a[1] + "\t" + a[2]).forEach(System.out::println);
 
 	} // end main
 
