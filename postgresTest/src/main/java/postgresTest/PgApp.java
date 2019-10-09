@@ -9,13 +9,15 @@ public class PgApp {
 		String navn = "";
 
 		Scanner sc1 = new Scanner(System.in);
-		
-		while (true)  {
-			System.out.println("Tast inn starten på firmanavnet (eller q for å avslutte):");			
+
+		while (true) {
+			System.out.println("Tast inn starten på firmanavnet (eller q for å avslutte):");
 			navn = sc1.nextLine();
-			if(navn.equals("q")) break;
-			data.getData(navn);	
-		} ;
+			if (navn.equals("q"))
+				break;
+			data.getData(navn);
+		}
+		
 
 		sc1.close();
 		System.out.println("Farvel...");

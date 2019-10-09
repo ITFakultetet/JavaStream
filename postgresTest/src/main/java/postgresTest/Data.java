@@ -16,7 +16,6 @@ public class Data {
 		Properties props = new Properties();
 		props.setProperty("user", "kurs");
 		props.setProperty("password", "kurs123");
-//		props.setProperty("ssl","false");
 
 		try {
 			conn = DriverManager.getConnection(url, props);
@@ -25,14 +24,12 @@ public class Data {
 			e.printStackTrace();
 		}
 
-//		String url = "jdbc:postgresql://localhost/test?user=fred&password=secret&ssl=true";
-//		Connection conn = DriverManager.getConnection(url);
-
 	} // end constructor
 
 	public void getData(String navn) {
 
 		Statement st;
+		int i = 0;
 		System.out.println("Orgnummer\tNavn");
 		System.out.println("-----------------------------------------");
 
@@ -41,12 +38,14 @@ public class Data {
 			ResultSet rs = st.executeQuery("SELECT orgnr, navn FROM enheter WHERE navn ilike '" + navn + "%'");
 			while (rs.next()) {
 				System.out.println(rs.getString("orgnr") + "\t" + rs.getString("navn"));
+				i++;
 			}
+			
+			System.out.println("Antall bedrifter funnet: "+i);
 			rs.close();
 			st.close();
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 
