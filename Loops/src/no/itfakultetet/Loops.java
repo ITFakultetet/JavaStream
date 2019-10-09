@@ -19,7 +19,7 @@ public class Loops {
 			i++;  // Det samme som: i = i + 1
 		}
 
-		// do while -løkke (kjøre alltid minst 1 gang)
+		// do while -løkke (kjøres alltid minst 1 gang)
 		System.out.println("\ndo while-løkke");
 		i = 10;
 		do {
