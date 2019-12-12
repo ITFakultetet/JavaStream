@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Arrays/ArrayEks.iml" filepath="$PROJECT_DIR$/Arrays/ArrayEks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Arv/Arv.iml" filepath="$PROJECT_DIR$/Arv/Arv.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Betingelseslogikk/Betingelseslogikk.iml" filepath="$PROJECT_DIR$/Betingelseslogikk/Betingelseslogikk.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Constructors/Constructors.iml" filepath="$PROJECT_DIR$/Constructors/Constructors.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DatoTid/DatoTid.iml" filepath="$PROJECT_DIR$/DatoTid/DatoTid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Files/Files.iml" filepath="$PROJECT_DIR$/Files/Files.iml" />
+      <module fileurl="file://$PROJECT_DIR$/List_LinkedList/List_LinkedList.iml" filepath="$PROJECT_DIR$/List_LinkedList/List_LinkedList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Loops/Loops.iml" filepath="$PROJECT_DIR$/Loops/Loops.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Maps/Maps.iml" filepath="$PROJECT_DIR$/Maps/Maps.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Ord/Ord.iml" filepath="$PROJECT_DIR$/Ord/Ord.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Postgres/Postgres.iml" filepath="$PROJECT_DIR$/Postgres/Postgres.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PrimitiveDataTyper/PrimitiveDataTyper.iml" filepath="$PROJECT_DIR$/PrimitiveDataTyper/PrimitiveDataTyper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Sets/Sets.iml" filepath="$PROJECT_DIR$/Sets/Sets.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Strenger/Strenger.iml" filepath="$PROJECT_DIR$/Strenger/Strenger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Tall/Tall.iml" filepath="$PROJECT_DIR$/Tall/Tall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TelBok/TelBok.iml" filepath="$PROJECT_DIR$/TelBok/TelBok.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Unntak/Unntak.iml" filepath="$PROJECT_DIR$/Unntak/Unntak.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kontakter/kontakter.iml" filepath="$PROJECT_DIR$/kontakter/kontakter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/postgresTest/postgresTest.iml" filepath="$PROJECT_DIR$/postgresTest/postgresTest.iml" />
+    </modules>
+  </component>
+</project>

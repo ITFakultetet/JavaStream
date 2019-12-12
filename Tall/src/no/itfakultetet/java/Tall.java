@@ -32,7 +32,7 @@ public class Tall {
 		System.out.println("Kvadratroten av 90: "+ Math.sqrt(90));
 		System.out.println("Høyeste tall av "+tall1+" og "+tall2+": "+ Math.max(tall1, tall2));
 		System.out.println("Minste tall av "+tall3+" og "+tall2+": "+ Math.min(tall3, tall2));
-		
+
 
 		// Tilfeldige tall
 
@@ -40,7 +40,7 @@ public class Tall {
 		// til å lage tilfeldige desimaltall mellom 0 og 1;
 
 		
-		System.out.println("\n5 tilfeldige tall: ");
+		System.out.println("\n5 tilfeldige tall mellom 0 og 1 med Math.random() : ");
 
 		for (int i = 0; i < 5; i++) {
 			System.out.println(Math.random());
@@ -48,7 +48,7 @@ public class Tall {
 
 		// Bruk av java.util.Random
 		// 10 tilfeldige terningkast
-		System.out.println("\n10 tilfeldige terningkast");
+		System.out.println("\n10 tilfeldige terningkast med java.util.Random().nextInt()");
 		for (int i = 0; i < 10; i++) {
 			System.out.print(new Random().nextInt(6) + 1 + " ");
 		}
