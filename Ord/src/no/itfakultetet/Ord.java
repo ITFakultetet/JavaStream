@@ -29,23 +29,18 @@ public class Ord {
 	public String getFil() {
 		return fil;
 	}
-
 	public void setFil(String fil) {
 		this.fil = fil;
 	}
-
 	public String getUtfil1() {
 		return utfil1;
 	}
-
 	public void setUtfil1(String utfil1) {
 		this.utfil1 = utfil1;
 	}
-
 	public String getUtfil2() {
 		return utfil2;
 	}
-
 	public void setUtfil2(String utfil2) {
 		this.utfil2 = utfil2;
 	}

@@ -34,7 +34,7 @@ public class TelBok {
 
 		do {
 
-			System.out.println("Legg inn navn:");
+			System.out.println("Legg inn navn: ( eller 'q' for å avslutte");
 			// navn = sc.netxtLine();
 			navn = br.readLine();
 			if (navn.equals("q"))

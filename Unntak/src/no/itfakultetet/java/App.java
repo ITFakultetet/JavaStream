@@ -11,17 +11,16 @@ public class App {
 		try {
 			test1.run(0);
 		} catch (IOException e) {
-			System.out.println(e.getMessage());
+			// System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
 		
 		try {
 			test1.run(1);
 		} catch (IOException e) {
-			// System.out.println(e.getMessage());
+			//System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
-	
 		
 		try {
 			test1.run("null");

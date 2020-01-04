@@ -7,7 +7,8 @@ public class App {
 	 * 
 	 * @param args
 	 *            Filnavn fra kommandolinjen
-	 */
+	 **/
+
 	public static void main(String[] args) {
 
 		// Sjekk at det gis ett argument til programmet eller opplys om bruken
