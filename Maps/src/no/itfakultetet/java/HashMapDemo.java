@@ -44,7 +44,6 @@ public class HashMapDemo {
 		map1.forEach((k, v) -> System.out.println("Nøkkel: " + k + " har verdien: " + v));
 
 		System.out.println();
-
 		// Filtrer ut verdier med stream() og filter()
 		System.out.println("Bruk stream() og filer() til å printe ut nøkkel/verdi-par med verdi som inneholder \"6\" ");
 		map1.entrySet().stream().filter(a -> a.getValue().contains("6")).forEach(System.out::println);

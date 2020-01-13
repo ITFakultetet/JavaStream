@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a1b912c5-96de-445d-82af-dd3c4f3ca9df" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/kontakter.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arrays/bin/no/itfakultetet/Arrays.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Arv/src/no/itfakultetet/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Arv/src/no/itfakultetet/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Betingelseslogikk/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Betingelseslogikk/bin/no/itfakultetet/Betingelseslogikk.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Betingelseslogikk/bin/no/itfakultetet/Betingelseslogikk.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Constructors/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Constructors/bin/no/itfakultetet/java/ConstructorsApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Constructors/bin/no/itfakultetet/java/ConstructorsApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_LinkedList/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_LinkedList/bin/no/itfakultetet/ListLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../List_LinkedList/bin/no/itfakultetet/ListLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../List_LinkedList/src/no/itfakultetet/ListLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../List_LinkedList/src/no/itfakultetet/ListLinkedList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Loops/bin/no/itfakultetet/Loops.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Loops/bin/no/itfakultetet/Loops.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Postgres/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/../Postgres/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Postgres/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" afterPath="$PROJECT_DIR$/../Postgres/.settings/org.eclipse.jdt.core.prefs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Postgres/src/no/itfakultetet/java/App2.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Postgres/src/no/itfakultetet/java/App2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Strenger/src/no/itfakultetet/java/Strenger.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Strenger/src/no/itfakultetet/java/Strenger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TelBok/bin/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/java/GetData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/java/GetData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/java/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/java/Index.java" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1SOz9wbz9oHZlz2zf15TjJPRQkO" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.3145434" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a1b912c5-96de-445d-82af-dd3c4f3ca9df" name="Default Changelist" comment="" />
+      <created>1571449281134</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571449281134</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

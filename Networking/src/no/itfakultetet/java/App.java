@@ -7,7 +7,7 @@ public class App {
 
     public static void main(String[] args) {
 
-Http test = new Http();
+        Http test = new Http();
 
         try {
             test.getRequest("https://web.itfakultetet.no");
