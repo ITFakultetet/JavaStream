@@ -36,7 +36,7 @@ public class TripPlanner {
         String symbolOfCurrency = input.next();
         System.out.print("Hvor mange " + symbolOfCurrency + " er det i 1 NOK? ");
         double multipleFactor = input.nextDouble();
-        System.out.println("\n\n\n");
+        System.out.println();
         System.out.println("Hvis du er borte i " + noOfDays + " dager, er det det samme som " + noOfDays * 24 + " timer, eller " + noOfDays * 24 * 60 + " minutter");
         System.out.println("Hvis du bruker " + (int) amountOfMoney + " NOK, kan du bruke " + (double) Math.round((amountOfMoney / noOfDays) * 100) / 100 + " NOK per dag");
         System.out.println("Ditt totale budsjett i " + symbolOfCurrency + " er " + amountOfMoney * multipleFactor + " " + symbolOfCurrency + ", som blir " + (double) Math.round((amountOfMoney * multipleFactor / noOfDays) * 100) / 100 + " " + symbolOfCurrency+" per dag");
