@@ -49,7 +49,7 @@ public class TripPlanner {
         Scanner input = new Scanner(System.in);
         System.out.print("Hva er tidsforskjellen, i timer, mellom hjemstedet ditt og destinasjonen? (sett minus foran hvis det er bakover i tid) ");
         int differenceOfTime = input.nextInt();
-        System.out.println("Det betyr at når det er midnatt hjemme, vil tiden være " + (24 + differenceOfTime) % 24 + ":00 på destinasjonsstedet\n og når kl. er 12 på dagen hjemme, vil den være " + (12 + differenceOfTime) + ":00 på destinasjonsstedet");
+        System.out.println("Det betyr at når det er midnatt hjemme, vil klokken være " + (24 + differenceOfTime) % 24 + ":00 på destinasjonsstedet,\nog når kl. er 12 på dagen hjemme, vil den være " + (12 + differenceOfTime) + ":00 på destinasjonsstedet");
         System.out.println("*****\n\n\n");
 
     }
