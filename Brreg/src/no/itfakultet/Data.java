@@ -170,7 +170,7 @@ public class Data {
             e.printStackTrace();
         }
         data.clear();
-        System.out.println("Lagret filen " + this.navn + "_data.xsl");
+        System.out.println("Lagret filen " + this.navn + "_data.xslx");
     }
 
     public void lagHtml(HashMap<String, String> data) {

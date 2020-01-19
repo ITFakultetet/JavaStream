@@ -1,5 +1,7 @@
 package no.itfakultetet.java;
 
+import org.apache.commons.math3.util.Precision;
+
 import java.util.Random;
 
 public class Tall {
@@ -23,6 +25,8 @@ public class Tall {
 		System.out.println("Tall1 = " + tall1);
 		System.out.println("Tall1 avrundet til heltall = " + Math.round(tall1));
 		System.out.println("Tall1 avrundet til to desimaler = " + Math.round(tall1 * 100) / 100.0);
+		System.out.println("Tall1 avrundet til tre desimaler med Precision.round() fra apache.commons.math = " + Precision.round(tall1,3));
+
 
 		System.out.println();
 
