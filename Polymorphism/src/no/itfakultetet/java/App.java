@@ -18,6 +18,7 @@ public class App {
         System.out.println(kaktus2.getArt());
 
         kaktus2.gro();
+        kaktus2.mist_blader();
 
     }
 
