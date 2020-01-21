@@ -17,8 +17,7 @@ public class Plante {
     }
 
     public void mist_blader() {
-        System.out.println(art+" mister bladene...");
+        System.out.println(art + " mister bladene...");
     }
-
 
 }

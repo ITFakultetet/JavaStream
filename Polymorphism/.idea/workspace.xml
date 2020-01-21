@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8b5f87cb-c7b0-44ff-a08a-df50908e027b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Polymorphism/no/itfakultetet/java/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Polymorphism/no/itfakultetet/java/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/java/Plante.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/java/Plante.java" afterDir="false" />
     </list>
@@ -10,6 +12,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Polymorphism" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -31,9 +36,11 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RunManager">
-    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+    <configuration name="Polymorphism" type="Application" factoryName="Application">
       <option name="MAIN_CLASS_NAME" value="no.itfakultetet.java.App" />
       <module name="Polymorphism" />
       <method v="2">
@@ -70,7 +77,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1579496448074</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Eksmpel på polymorfisme">
+      <created>1579498832735</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1579498832735</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -78,10 +91,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="Eksmpel på polymorfisme" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579495932862">
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579607538049">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579495932862" />
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579607538049" />
     <state x="773" y="228" key="#com.intellij.ide.util.MemberChooser" timestamp="1579495812217">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
@@ -90,30 +103,62 @@
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state x="697" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579495931481" />
-    <state x="557" y="110" key="CommitChangelistDialog2" timestamp="1579496448000">
+    <state x="701" y="260" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579579148999">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="557" y="110" key="CommitChangelistDialog2/0.0.1920.1038@0.0.1920.1038" timestamp="1579496448000" />
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom" timestamp="1579498794205">
+    <state x="701" y="260" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1038@0.0.1920.1038" timestamp="1579579148999" />
+    <state x="557" y="110" key="CommitChangelistDialog2" timestamp="1579498832612">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1579498794205" />
-    <state width="1878" height="272" key="GridCell.Tab.0.center" timestamp="1579498794205">
+    <state x="557" y="110" key="CommitChangelistDialog2/0.0.1920.1038@0.0.1920.1038" timestamp="1579498832612" />
+    <state x="748" y="273" key="FileChooserDialogImpl" timestamp="1579579146216">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1579498794205" />
-    <state width="1878" height="272" key="GridCell.Tab.0.left" timestamp="1579498794205">
+    <state x="748" y="273" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1579579146216" />
+    <state width="1878" height="821" key="GridCell.Tab.0.bottom" timestamp="1579608533174">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1579498794205" />
-    <state width="1878" height="272" key="GridCell.Tab.0.right" timestamp="1579498794205">
+    <state width="1920" height="981" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1579607875611">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state width="1878" height="272" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1579498794205" />
-    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1579496455768">
+    <state width="1920" height="981" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579607875611" />
+    <state width="1878" height="821" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1579608533174" />
+    <state width="1878" height="821" key="GridCell.Tab.0.center" timestamp="1579608533174">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1038@0.0.1920.1038" timestamp="1579496455768" />
+    <state width="1920" height="981" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1579607875610">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1920" height="981" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579607875610" />
+    <state width="1878" height="821" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1579608533174" />
+    <state width="1878" height="821" key="GridCell.Tab.0.left" timestamp="1579608533173">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1920" height="981" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1579607875609">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1920" height="981" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579607875609" />
+    <state width="1878" height="821" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1579608533173" />
+    <state width="1878" height="821" key="GridCell.Tab.0.right" timestamp="1579608533174">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1920" height="981" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1579607875611">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1920" height="981" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579607875611" />
+    <state width="1878" height="821" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1579608533174" />
+    <state x="454" y="150" key="SettingsEditor" timestamp="1579608030322">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="454" y="150" key="SettingsEditor/0.0.1920.1038@0.0.1920.1038" timestamp="1579608030322" />
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2" timestamp="1579498836888">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="560" y="251" key="Vcs.Push.Dialog.v2/0.0.1920.1038@0.0.1920.1038" timestamp="1579498836888" />
+    <state x="626" y="346" key="com.intellij.ide.util.TipDialog" timestamp="1579607492174">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="626" y="346" key="com.intellij.ide.util.TipDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579607492174" />
     <state x="614" y="254" width="692" height="530" key="find.popup" timestamp="1579498679969">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
