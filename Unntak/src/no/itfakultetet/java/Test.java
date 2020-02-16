@@ -10,7 +10,7 @@ public class Test {
 		if (i == 0) {
 			System.out.println("Testen var vellykket!");
 		} else {
-			throw new IOException("Testen feilet fordi parameteret var tallet \""+ i +"\" og ikke tallet 0");
+			throw new IOException("Testen feilet fordi parameteret var tallet "+ i +" og ikke tallet 0");
 		}
 	}
  

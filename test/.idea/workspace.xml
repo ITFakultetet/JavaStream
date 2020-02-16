@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="test" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="59d4977c-07a7-4dd9-a4ae-e15d39b63088" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../DatoogTid/DatoogTid.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Klasser/Klasser.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/App.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/Ord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/class-use/App.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/class-use/Ord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/no/itfakultetet/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/script-dir/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ord/doc/type-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/Ordtelling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/ord_alfabetisk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/out/production/Ordtelling/no/itfakultetet/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/src/no/itfakultetet/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/test/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Ord/doc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Ord/doc/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/Test.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="test" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1WobgzK94UWtv9eR1bz5FQFfIJG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RunManager">
+    <configuration name="test" type="Application" factoryName="Application">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="test" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59d4977c-07a7-4dd9-a4ae-e15d39b63088" name="Default Changelist" comment="" />
+      <created>1579819009391</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579819009391</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="560" y="177" width="887" height="684" key="#Project_Structure" timestamp="1581797428555">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="560" y="177" width="887" height="684" key="#Project_Structure/0.0.1920.1038@0.0.1920.1038" timestamp="1581797428555" />
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1579820605227">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="424" y="173" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579820605227" />
+    <state x="697" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1579850382293">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="697" y="301" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579850382293" />
+    <state x="698" y="265" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1579822466689">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="698" y="265" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1579822466689" />
+    <state x="754" y="330" key="FileChooserDialogImpl" timestamp="1579850452450">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="754" y="330" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1579850452450" />
+    <state width="1868" height="266" key="GridCell.Tab.0.bottom" timestamp="1581813629518">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1868" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1581813629518" />
+    <state width="1868" height="266" key="GridCell.Tab.0.center" timestamp="1581813629518">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1868" height="266" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1581813629518" />
+    <state width="1868" height="266" key="GridCell.Tab.0.left" timestamp="1581813629517">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1868" height="266" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1581813629517" />
+    <state width="1868" height="266" key="GridCell.Tab.0.right" timestamp="1581813629518">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1868" height="266" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1581813629518" />
+    <state x="465" y="263" width="992" height="737" key="SettingsEditor" timestamp="1579883744251">
+      <screen x="54" y="27" width="1866" height="1053" />
+    </state>
+    <state x="454" y="150" key="SettingsEditor/0.0.1920.1038@0.0.1920.1038" timestamp="1579850465030" />
+    <state x="465" y="263" width="992" height="737" key="SettingsEditor/54.27.1866.1053@54.27.1866.1053" timestamp="1579883744251" />
+    <state x="628" y="346" width="714" height="354" key="com.intellij.ide.util.TipDialog" timestamp="1581789350273">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="628" y="346" width="714" height="354" key="com.intellij.ide.util.TipDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1581789350273" />
+    <state x="670" y="381" key="com.intellij.ide.util.TipDialog/54.27.1866.1053@54.27.1866.1053" timestamp="1579883674218" />
+    <state x="62" y="128" key="new project wizard" timestamp="1581813627097">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="62" y="128" key="new project wizard/0.0.1920.1038@0.0.1920.1038" timestamp="1581813627097" />
+  </component>
+</project>

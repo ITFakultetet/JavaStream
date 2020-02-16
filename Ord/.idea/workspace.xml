@@ -2,14 +2,89 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9b11e234-a0c9-4835-95c9-12fb7af64d21" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Tall/Tall.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../DatoogTid/DatoogTid.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Klasser/Klasser.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/allclasses-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/allpackages-index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/element-list" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-3.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-4.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-5.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-6.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/index-files/index-7.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/member-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/member-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/App.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/Ord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/class-use/App.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/class-use/Ord.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/package-summary.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/package-tree.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/no/itfakultetet/package-use.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/package-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/package-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/resources/glass.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/resources/x.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/external/jquery/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_glass_55_fbf9ee_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_glass_65_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_glass_75_dadada_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_glass_75_e6e6e6_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_glass_95_fef1ec_1x400.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-icons_222222_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-icons_2e83ff_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-icons_454545_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-icons_888888_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/images/ui-icons_cd0a0a_256x240.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-3.4.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.structure.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jquery-ui.structure.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip-utils/dist/jszip-utils-ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip-utils/dist/jszip-utils-ie.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip-utils/dist/jszip-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip-utils/dist/jszip-utils.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip/dist/jszip.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/script-dir/jszip/dist/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/search.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/type-search-index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/type-search-index.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/Ordtelling.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/ord_alfabetisk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/out/production/Ordtelling/no/itfakultetet/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Ordtelling/src/no/itfakultetet/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/artifacts/test.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ord_alfabetisk.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/ord_antall.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/out/production/test/Test.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../test/test.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ord/com/theitfaculty/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Ord/com/theitfaculty/Ord.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/App.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/itfakultetet/Ord.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/itfakultetet/Ord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/constant-values.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/deprecated-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/help-doc.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index-files/index-1.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index-files/index-1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/doc/overview-tree.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/doc/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/stylesheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/doc/stylesheet.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Unntak/src/no/itfakultetet/java/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,23 +94,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="696" />
-  </component>
   <component name="ProjectId" id="1UuU1PSO327TA3xweYzTuScz1cm" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Unntak" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RunManager">
@@ -127,6 +200,9 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="645" y="326" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576205899472">
       <screen x="0" y="0" width="1600" height="868" />
@@ -136,10 +212,46 @@
       <screen x="0" y="0" width="1600" height="868" />
     </state>
     <state x="384" y="92" key="#com.intellij.openapi.projectRoots.ui.ProjectJdksEditor/0.0.1600.868@0.0.1600.868" timestamp="1576205895775" />
-    <state x="748" y="273" key="FileChooserDialogImpl" timestamp="1578115439012">
+    <state x="701" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579815078920">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
-    <state x="748" y="273" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1578115439012" />
+    <state x="701" y="246" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1920.1038@0.0.1920.1038" timestamp="1579815078920" />
+    <state x="748" y="273" key="FileChooserDialogImpl" timestamp="1579815030358">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="748" y="273" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1579815030358" />
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom" timestamp="1579873155410">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom.inPresentationMode" timestamp="1579815590350">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579815590350" />
+    <state width="1878" height="270" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1579873155410" />
+    <state width="1878" height="270" key="GridCell.Tab.0.center" timestamp="1579873155410">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.center.inPresentationMode" timestamp="1579815590350">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.center.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579815590350" />
+    <state width="1878" height="270" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1579873155410" />
+    <state width="1878" height="270" key="GridCell.Tab.0.left" timestamp="1579873155410">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.left.inPresentationMode" timestamp="1579815590349">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.left.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579815590349" />
+    <state width="1878" height="270" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1579873155410" />
+    <state width="1878" height="270" key="GridCell.Tab.0.right" timestamp="1579873155410">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.right.inPresentationMode" timestamp="1579815590350">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state width="1878" height="270" key="GridCell.Tab.0.right.inPresentationMode/0.0.1920.1038@0.0.1920.1038" timestamp="1579815590350" />
+    <state width="1878" height="270" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1579873155410" />
     <state x="454" y="150" key="SettingsEditor" timestamp="1576987622419">
       <screen x="0" y="0" width="1920" height="1038" />
     </state>
@@ -155,6 +267,10 @@
       <screen x="0" y="0" width="1600" height="868" />
     </state>
     <state x="454" y="176" width="692" height="520" key="find.popup/0.0.1600.868@0.0.1600.868" timestamp="1576205814737" />
+    <state x="292" y="128" key="new project wizard" timestamp="1579819009314">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="292" y="128" key="new project wizard/0.0.1920.1038@0.0.1920.1038" timestamp="1579819009314" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

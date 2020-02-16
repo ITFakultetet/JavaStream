@@ -23,7 +23,7 @@ public class App {
 		}
 		
 		try {
-			test1.run("null");
+			test1.run("to");
 		} catch (IOException e) {
 			// System.out.println(e.getMessage());
 			e.printStackTrace();
