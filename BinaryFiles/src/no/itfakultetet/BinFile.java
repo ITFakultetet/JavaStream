@@ -17,10 +17,12 @@ public class BinFile {
 
     }
 
-    public void writeFile(String text) throws IOException {
+    public void writeFile(String kurs,String dato, int pris) throws IOException {
 
         DataOutputStream ut = new DataOutputStream(new BufferedOutputStream(this.output));
-        ut.writeUTF(text);
+        ut.writeUTF(kurs);
+        ut.writeUTF(dato);
+        ut.writeInt(pris);
         ut.flush();
 
     }
@@ -29,8 +31,10 @@ public class BinFile {
         try {
             FileInputStream input = new FileInputStream(fileName);
             DataInputStream in = new DataInputStream(new BufferedInputStream(input));
+            System.out.println("Kurs-tittel\t\tDato\t\tInntekt");
+            System.out.println("-".repeat(40));
             while (true) {
-                System.out.println(in.readUTF());
+                System.out.println(in.readUTF()+"\t"+in.readUTF()+"\t"+in.readInt());
             }
         } catch (EOFException e) {
             System.out.println("--- slutt på filen ---");

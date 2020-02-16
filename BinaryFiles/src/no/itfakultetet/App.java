@@ -7,11 +7,11 @@ public class App {
     public static void main(String[] args) throws IOException {
 
 
-        BinFile fil = new BinFile("terje2.dat");
-        fil.writeFile("Dette er en tekst til");
-        fil.writeFile("Dette er en ny linje");
+        BinFile fil = new BinFile("kurs.dat");
+        fil.writeFile("SQL Grunnkurs","2020-02-10",34000);
 
-        fil.readFile("terje2.dat");
+
+        fil.readFile("kurs.dat");
 
     }
 }
