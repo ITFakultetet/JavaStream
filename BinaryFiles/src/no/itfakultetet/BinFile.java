@@ -35,9 +35,9 @@ public class BinFile {
         try {
             FileInputStream input = new FileInputStream(fileName);
             DataInputStream in = new DataInputStream(new BufferedInputStream(input));
-            System.out.printf("%-35s %-12s %-12s %8s %12s","Kurs-tittel","Start","Slutt","Antall","Fakturert");
+            System.out.printf("%-40s %-12s %-12s %8s %12s","Kurs-tittel","Start","Slutt","Deltakere","Fakturert");
             System.out.println();
-            System.out.println("-".repeat(80));
+            System.out.println("-".repeat(90));
 
             while (true) {
                 tittel = in.readUTF();
@@ -47,13 +47,13 @@ public class BinFile {
                 fakturert = in.readInt();
                 sum+= fakturert;
 
-                System.out.printf("%-35s %-12s %-12s %8d %12d",tittel,start,slutt,deltakere,fakturert);
+                System.out.printf("%-40s %-12s %-12s %8d %12d",tittel,start,slutt,deltakere,fakturert);
                 System.out.println();
 
             }
         } catch (EOFException e) {
-
-            System.out.printf("%83d",sum);
+            System.out.println("-".repeat(90));
+            System.out.printf("%80s %7d","SUM",sum);
             System.out.println();
 
         } catch (IOException e) {
