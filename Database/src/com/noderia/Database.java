@@ -34,6 +34,37 @@ public class Database implements Serializable {
         this.users = users;
     }
 
+    public String getDbName() {
+        return dbName;
+    }
+
+    public void setDbName(String dbName) {
+        this.dbName = dbName;
+    }
+
+    public String getCharSet() {
+        return charSet;
+    }
+
+    public void setCharSet(String charSet) {
+        this.charSet = charSet;
+    }
+
+    public String getCollation() {
+        return collation;
+    }
+
+    public void setCollation(String collation) {
+        this.collation = collation;
+    }
+
+    public Map getUsers() {
+        return users;
+    }
+
+    public void setUsers(Map users) {
+        this.users = users;
+    }
 
     public void addTable(Table table) {
         this.tables.put(tables.size() + 1, table);
@@ -66,30 +97,35 @@ public class Database implements Serializable {
         }
     }
 
-    public void showDatabase(Database database) throws IOException, ClassNotFoundException {
+    public void showDatabase(String dbName) throws IOException, ClassNotFoundException {
 
-        FileInputStream dbFile = new FileInputStream(database.dbName + ".dat");
-        ObjectInputStream is = new ObjectInputStream(new BufferedInputStream(dbFile));
-        Database db = (Database) is.readObject();
-        System.out.println("Database Info");
-        System.out.println("-".repeat(40));
-        System.out.println("Name: "+db.dbName);
-        System.out.println("-".repeat(40));
-
-        System.out.println("Tables");
-        System.out.println("-".repeat(40));
-        db.printTables();
-        System.out.println("-".repeat(40));
-        System.out.println("Tabellstrukturer");
-        System.out.println("-".repeat(40));
-        db.tables.forEach((k,v) -> {
-            System.out.println("Table Name: "+v.getTableName());
+        ObjectInputStream is;
+        try (FileInputStream dbFile = new FileInputStream(dbName + ".dat")) {
+            is = new ObjectInputStream(new BufferedInputStream(dbFile));
+            Database db = (Database) is.readObject();
+            System.out.println("Database Info");
             System.out.println("-".repeat(40));
-            v.printTableStructure();
-            System.out.println();
-        });
+            System.out.println("Name: " + db.dbName);
+            System.out.println("-".repeat(40));
 
-        is.close();
+            System.out.println("Tables");
+            System.out.println("-".repeat(40));
+            db.printTables();
+            System.out.println("-".repeat(40));
+            System.out.println("Tabellstrukturer");
+            System.out.println("-".repeat(40));
+            db.tables.forEach((k, v) -> {
+                System.out.println("Table Name: " + v.getTableName());
+                System.out.println("-".repeat(40));
+                v.printTableStructure();
+                System.out.println();
+            });
+
+            is.close();
+
+        } catch (IOException e) {
+            System.out.println("Database unknown");
+        }
 
     }
 
