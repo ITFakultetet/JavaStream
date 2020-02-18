@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="Liten Database App">
-      <change afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
+    <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minDatabase.dat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/noderia/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/noderia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/noderia/Sql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,7 +76,13 @@
       <option name="presentableId" value="LOCAL−00001" />
       <updated>1582036772867</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL−00002" summary="Liten Database App">
+      <created>1582041111579</created>
+      <option name="number" value="LOCAL−00002" />
+      <option name="presentableId" value="LOCAL−00002" />
+      <updated>1582041111579</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -110,10 +111,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582040616114" />
-    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582036769668">
+    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582041109315">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582036769668" />
+    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582041109315" />
     <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1582037848937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -130,10 +131,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582037848937" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582036774550">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582041118174">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582036774550" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582041118174" />
     <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582040843810">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

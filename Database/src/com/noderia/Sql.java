@@ -10,11 +10,22 @@ public class Sql {
 
     private void parseSql(String sql) {
 
-        if (sql.toLowerCase().startsWith("create database")) {
-            String[] words = sql.split(" ");
-            String dbName = words[2];
+        String[] words = sql.split(" ");
+        String charset = "";
 
-            Database db1 = new Database(dbName, "UTF8");
+        if (sql.toLowerCase().startsWith("create database")) {
+
+            String dbName = words[2];
+            for (int i = 0; i < words.length; i++) {
+                if (words[i].equals("charset")) {
+                    charset = word[i + 2];
+                } else {
+                    charset = "";
+                }
+            }
+
+
+            Database db1 = new Database(dbName, charset);
 
 
         }
