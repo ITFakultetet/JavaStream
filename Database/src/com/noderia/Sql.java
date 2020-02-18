@@ -4,11 +4,13 @@ import java.io.IOException;
 
 public class Sql {
     private String sql = "";
+    public String prompt = "/";
 
     public Sql(String sql) {
         this.sql = sql;
         parseSql(sql);
     }
+
 
     private void parseSql(String sql) {
 
@@ -16,6 +18,7 @@ public class Sql {
         String[] words = sql.split("[= ]");
         String charset = "", collation = "";
 
+        // create database dbname
         if (sql.toLowerCase().startsWith("create database")) {
 
             String dbName = words[2];
@@ -43,7 +46,7 @@ public class Sql {
 
         } // end create database
 
-
+        // describe database <dbname>
         if (sql.toLowerCase().startsWith("describe database")) {
             String dbName = words[2];
             Database db1 = new Database(dbName);
@@ -55,10 +58,17 @@ public class Sql {
                 e.printStackTrace();
             }
 
-        }
+        } // end describe database
+
+        // use <dbname>
+        if (sql.toLowerCase().startsWith("use")) {
+            String dbName = words[1];
+            Database db = new Database(dbName);
+            this.prompt = dbName + prompt;
+            System.out.println("Database changed");
+
+        } // end use
 
 
     }
-
-
 }

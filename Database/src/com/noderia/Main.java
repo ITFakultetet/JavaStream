@@ -6,12 +6,13 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
-
+        String currentDb = "";
+        String prompt = "";
 
         // Main Menu
         while (true) {
             // print prompt
-            System.out.print("> ");
+            System.out.print(prompt + "> ");
             Scanner input = new Scanner(System.in);
             String inputText = input.nextLine();
             if (inputText.equals("quit")) {
@@ -19,8 +20,8 @@ public class Main {
                 System.exit(0);
             } else {
                 Sql sql = new Sql(inputText);
+                prompt = sql.prompt;
             }
-
 
         }
 

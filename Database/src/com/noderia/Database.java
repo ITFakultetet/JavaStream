@@ -105,7 +105,7 @@ public class Database implements Serializable {
             Database db = (Database) is.readObject();
             System.out.println("Database Info");
             System.out.println("-".repeat(40));
-            System.out.println("Name: " + db.dbName);
+            System.out.println("Name: " + db.dbName + " - Default Character Set: " + db.getCharSet() + " - Default Collation: " + db.getCollation());
             System.out.println("-".repeat(40));
 
             System.out.println("Tables");
