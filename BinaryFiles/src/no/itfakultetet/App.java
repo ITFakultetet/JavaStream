@@ -25,9 +25,9 @@ public class App {
                 Scanner sc1 = new Scanner(System.in);
                 System.out.println("Kurstittel: ");
                 String tittel = sc1.nextLine();
-                System.out.println("Start-dato: ");
+                System.out.println("Start-dato (YYYY-MM-DD): ");
                 String startDato = sc1.nextLine();
-                System.out.println("Slutt-dato: ");
+                System.out.println("Slutt-dato (YYYY-MM-DD): ");
                 String sluttDato = sc1.nextLine();
                 System.out.println("Deltakere: ");
                 int deltakere = sc1.nextInt();
