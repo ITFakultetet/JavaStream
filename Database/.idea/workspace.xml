@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="Liten Database App">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/noderia/AppendableObjectOutputStream.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/minDatabase.dat" beforeDir="false" afterPath="$PROJECT_DIR$/minDatabase.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Table.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Table.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/minDatabase.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/noderia/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/noderia/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Table.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../PostgresTest/bouvet_data.html" beforeDir="false" afterPath="$PROJECT_DIR$/../PostgresTest/bouvet_data.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../postgresTest/postgresTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../postgresTest/postgresTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/noderia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,6 +75,13 @@
       <option name="presentableId" value="Default" />
       <updated>1581866719014</updated>
     </task>
+    <task id="LOCAL−00001" summary="Liten Database App">
+      <created>1582036772867</created>
+      <option name="number" value="LOCAL−00001" />
+      <option name="presentableId" value="LOCAL−00001" />
+      <updated>1582036772867</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -101,30 +106,38 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="529" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1581866831240" />
-    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582036732859">
+    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582040616114">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582036732859" />
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1582036636919">
+    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582040616114" />
+    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582036769668">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582036636919" />
-    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1582036636919">
+    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582036769668" />
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom" timestamp="1582037848937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582036636919" />
-    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1582036636919">
+    <state width="1557" height="222" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582037848937" />
+    <state width="1557" height="222" key="GridCell.Tab.0.center" timestamp="1582037848937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582036636919" />
-    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1582036636919">
+    <state width="1557" height="222" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582037848937" />
+    <state width="1557" height="222" key="GridCell.Tab.0.left" timestamp="1582037848937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582036636919" />
-    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1581953986914">
+    <state width="1557" height="222" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582037848937" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right" timestamp="1582037848937">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1581953986914" />
+    <state width="1557" height="222" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582037848937" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582036774550">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582036774550" />
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582040843810">
+      <screen x="0" y="0" width="1600" height="860" />
+    </state>
+    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1582040843810" />
     <state x="496" y="28" width="607" height="804" key="find.popup" timestamp="1581956347541">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

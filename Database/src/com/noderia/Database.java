@@ -45,12 +45,25 @@ public class Database implements Serializable {
 
     public void saveDatabase(Database database) throws IOException {
 
-        FileOutputStream dbFile = new FileOutputStream(database.dbName + ".dat");
-        ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
-        os.writeObject(database);
-        os.flush();
-        os.close();
+        try {
 
+            if (new File(database.dbName + ".dat").isFile()) {
+                FileOutputStream dbFile = new FileOutputStream(database.dbName + ".dat");
+                AppendableObjectOutputStream os = new AppendableObjectOutputStream(new BufferedOutputStream(dbFile));
+                os.writeObject(database);
+                os.flush();
+                os.close();
+            } else {
+                FileOutputStream dbFile = new FileOutputStream(database.dbName + ".dat");
+                ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
+                os.writeObject(database);
+                os.flush();
+                os.close();
+            }
+
+        } catch (IOException e) {
+            System.out.println("Not able to save database file. Message: " + e.getMessage());
+        }
     }
 
     public void showDatabase(Database database) throws IOException, ClassNotFoundException {
@@ -73,6 +86,7 @@ public class Database implements Serializable {
             System.out.println("Table Name: "+v.getTableName());
             System.out.println("-".repeat(40));
             v.printTableStructure();
+            System.out.println();
         });
 
         is.close();
