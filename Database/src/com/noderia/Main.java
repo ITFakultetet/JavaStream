@@ -10,7 +10,7 @@ public class Main {
 
         // Main Menu
         while (true) {
-
+            // print prompt
             System.out.print("> ");
             Scanner input = new Scanner(System.in);
             String inputText = input.nextLine();
