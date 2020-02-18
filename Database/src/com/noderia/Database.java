@@ -75,7 +75,6 @@ public class Database implements Serializable {
             v.printTableStructure();
         });
 
-
         is.close();
 
     }

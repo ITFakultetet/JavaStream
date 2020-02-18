@@ -55,7 +55,11 @@ public class Table implements Serializable {
     }
 
     public void printTableStructure() {
-        tableStructure.forEach((k,v)-> System.out.println(k + " "+ v.getName() + " "+ v.getDataType()+" "+v.isNotNull()+" "+v.isPrimaryKey()+" "+v.isAutoIncrement()));
+        tableStructure.forEach((k, v) -> System.out.println(k + " " + v.getName() + " " + v.getDataType() + " " + v.isNotNull() + " " + v.isPrimaryKey() + " " + v.isAutoIncrement()));
+    }
+
+    public void saveTableStructure() {
+
     }
 
 
