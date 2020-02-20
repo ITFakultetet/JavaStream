@@ -7,13 +7,15 @@ public class Sql {
     private String sql = "";
     public String prompt = "/";
 
-    public Sql(String sql) {
+    public Sql(String prompt, String sql) {
         this.sql = sql;
+        this.prompt = prompt;
         parseSql(sql);
     }
 
 
     private void parseSql(String sql) {
+
 
         // Prepare SQL - Create Array of words and remove =
         String[] words = sql.split("[= ]");
@@ -51,7 +53,6 @@ public class Sql {
         // describe database <dbname>
         if (sql.toLowerCase().startsWith("describe database") || (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2)) {
             String dbName;
-            System.out.println(words.length);
             // if sql = describe <dbname>
             if (words.length == 2) {
                 dbName = words[1];
@@ -76,7 +77,7 @@ public class Sql {
         if (sql.toLowerCase().startsWith("use")) {
             String dbName = words[1];
             currentDB.setDbName(dbName);
-            this.prompt = currentDB.getDbName() + prompt;
+            this.prompt = currentDB.getDbName() + "/";
             System.out.println("Database changed");
 
         } // end use

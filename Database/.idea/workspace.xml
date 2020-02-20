@@ -7,8 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_calcite_calcite_core_1_21_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Springbootstarter/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Springbootstarter/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Springbootstarter/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Springbootstarter/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Springbootstarter/Springbootstarter.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/noderia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/noderia/Sql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -169,22 +175,26 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582127818185" />
-    <state width="1557" height="302" key="GridCell.Tab.0.bottom" timestamp="1582124323604">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1868" height="268" key="GridCell.Tab.0.bottom" timestamp="1582202936765">
+      <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="1557" height="302" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582124323604" />
-    <state width="1557" height="302" key="GridCell.Tab.0.center" timestamp="1582124323604">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1868" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
+    <state width="1868" height="268" key="GridCell.Tab.0.center" timestamp="1582202936765">
+      <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="1557" height="302" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582124323604" />
-    <state width="1557" height="302" key="GridCell.Tab.0.left" timestamp="1582124323604">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1868" height="268" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
+    <state width="1868" height="268" key="GridCell.Tab.0.left" timestamp="1582202936764">
+      <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="1557" height="302" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582124323604" />
-    <state width="1557" height="302" key="GridCell.Tab.0.right" timestamp="1582124323604">
-      <screen x="0" y="0" width="1600" height="860" />
+    <state width="1868" height="268" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936764" />
+    <state width="1868" height="268" key="GridCell.Tab.0.right" timestamp="1582202936765">
+      <screen x="0" y="0" width="1920" height="1038" />
     </state>
     <state width="1557" height="302" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582124323604" />
+    <state width="1868" height="268" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
     <state x="301" y="9" key="SettingsEditor" timestamp="1582127795416">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -201,6 +211,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="525" y="328" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1582127751965" />
+    <state x="669" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582203016637">
+      <screen x="0" y="0" width="1920" height="1038" />
+    </state>
+    <state x="669" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1038@0.0.1920.1038" timestamp="1582203016637" />
     <state x="496" y="28" width="607" height="804" key="find.popup" timestamp="1581956347541">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
