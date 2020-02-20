@@ -7,7 +7,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_apache_calcite_calcite_core_1_21_0.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/noderia/Sql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,7 +33,9 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1XtYB2FChSYca0xU9F7tm5SINd6" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -125,10 +129,17 @@
       <option name="presentableId" value="LOCAL−00007" />
       <updated>1582061637353</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL−00008" summary="Liten Database App">
+      <created>1582127819899</created>
+      <option name="number" value="LOCAL−00008" />
+      <option name="presentableId" value="LOCAL−00008" />
+      <updated>1582127819899</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Liten Database App" />
     <option name="LAST_COMMIT_MESSAGE" value="Liten Database App" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
@@ -154,10 +165,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582040616114" />
-    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582061635987">
+    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582127818185">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582061635987" />
+    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582127818185" />
     <state width="1557" height="302" key="GridCell.Tab.0.bottom" timestamp="1582124323604">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -178,10 +189,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582127795416" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582061644928">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582127830534">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582061644928" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582127830534" />
     <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582040843810">
       <screen x="0" y="0" width="1600" height="860" />
     </state>

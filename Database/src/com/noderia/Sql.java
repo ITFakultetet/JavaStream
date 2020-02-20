@@ -2,10 +2,10 @@ package com.noderia;
 
 import java.io.IOException;
 
+import org.apache.calcite.sql.dialect.MysqlSqlDialect;
 public class Sql {
     private String sql = "";
     public String prompt = "/";
-
 
     public Sql(String sql) {
         this.sql = sql;
