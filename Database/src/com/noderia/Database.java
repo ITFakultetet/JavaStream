@@ -1,6 +1,10 @@
 package com.noderia;
 
+import com.google.common.io.Files;
+
+import java.awt.image.DataBuffer;
 import java.io.*;
+import java.nio.file.Paths;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -66,35 +70,59 @@ public class Database implements Serializable {
         this.users = users;
     }
 
-    public void addTable(Table table) {
-        this.tables.put(tables.size() + 1, table);
+    public void addTable(Database db, Table table) {
+
+        try {
+            db.tables.put(tables.size() + 1, table);
+            System.out.println("Added table to: " + db.getDbName());
+            db.saveDatabase(db);
+            System.out.println("Table created and Database Updated");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void printTables() {
         tables.forEach((k, v) -> System.out.println(k + " " + v.getTableName() + " " + v.getCharSet() + " " + v.getCollation()));
     }
 
-    public void saveDatabase(Database database) throws IOException {
+    public void saveDatabase(Database outDB) throws IOException {
 
+        System.out.println("Saves: " + outDB.getDbName());
         try {
 
-            if (new File(database.dbName + ".dat").isFile()) {
-                FileOutputStream dbFile = new FileOutputStream(database.dbName + ".dat");
-                AppendableObjectOutputStream os = new AppendableObjectOutputStream(new BufferedOutputStream(dbFile));
-                os.writeObject(database);
-                os.flush();
-                os.close();
-            } else {
-                FileOutputStream dbFile = new FileOutputStream(database.dbName + ".dat");
-                ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
-                os.writeObject(database);
-                os.flush();
-                os.close();
-            }
+            java.nio.file.Files.deleteIfExists(Paths.get(outDB.dbName + ".dat"));
+
+            FileOutputStream dbFile = new FileOutputStream(outDB.dbName + ".dat");
+            ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
+            os.writeObject(outDB);
+            os.flush();
+            os.close();
+            dbFile.flush();
+            dbFile.close();
+
 
         } catch (IOException e) {
             System.out.println("Not able to save database file. Message: " + e.getMessage());
         }
+    }
+
+
+    public Database openDatabase(String dbName) {
+        ObjectInputStream dbIs;
+        Database openedDB = new Database();
+        try (FileInputStream dbFile = new FileInputStream(dbName + ".dat")) {
+            dbIs = new ObjectInputStream(new BufferedInputStream(dbFile));
+            openedDB = (Database) dbIs.readObject();
+        } catch (FileNotFoundException e) {
+            System.out.println("Database Unknown");
+            ;
+        } catch (IOException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+
+        return openedDB;
     }
 
     public void showDatabase(String dbName) throws IOException, ClassNotFoundException {
@@ -124,9 +152,10 @@ public class Database implements Serializable {
             is.close();
 
         } catch (IOException e) {
-            System.out.println("Database unknown");
+            System.out.println("Database unknown" + e.getMessage());
+        } catch (ClassNotFoundException e) {
+            System.out.println("Class not found" + e.getMessage());
         }
-
     }
 
 

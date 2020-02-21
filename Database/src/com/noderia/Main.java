@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Main {
 
     public static String prompt = "";
-    public static String currentDb = "";
+    public static Database currentDB = new Database();
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
@@ -20,7 +20,7 @@ public class Main {
                 System.out.println("Goodbye...");
                 System.exit(0);
             } else {
-                Sql sql = new Sql(prompt, inputText);
+                Sql sql = new Sql(prompt, currentDB, inputText);
                 prompt = sql.prompt;
             }
 
