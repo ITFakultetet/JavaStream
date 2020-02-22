@@ -48,6 +48,7 @@ public class Field implements Serializable {
 
     public void setPrimaryKey(boolean primaryKey) {
         this.primaryKey = primaryKey;
+        this.notNull = true;
     }
 
     public boolean isNotNull() {
