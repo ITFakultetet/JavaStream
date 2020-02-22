@@ -2,17 +2,16 @@ package com.noderia;
 
 import java.io.IOException;
 
-import org.apache.calcite.sql.dialect.MysqlSqlDialect;
-
-import javax.xml.crypto.Data;
-
 public class Sql {
     private String sql = "";
     public String prompt = "/";
+    public Database currentDB;
+
 
     public Sql(String prompt, Database currentDB, String sql) {
         this.sql = sql;
         this.prompt = prompt;
+        this.currentDB = currentDB;
         parseSql(currentDB, sql);
     }
 
@@ -79,6 +78,7 @@ public class Sql {
         if (sql.toLowerCase().startsWith("use")) {
             String dbName = words[1];
             currentDB = currentDB.openDatabase(dbName);
+            this.currentDB = currentDB;
             prompt = currentDB.getDbName() + "/";
             // this.currentDBName = currentDB.getDbName();
             System.out.println("Database changed to " + currentDB.getDbName());
