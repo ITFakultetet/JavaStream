@@ -8,10 +8,11 @@
   <component name="ChangeListManager">
     <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Database.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/null.dat" beforeDir="false" afterPath="$PROJECT_DIR$/null.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Database/com/noderia/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/noderia/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/noderia/Sql.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/noderia/Sql.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/terje.dat" beforeDir="false" afterPath="$PROJECT_DIR$/terje.dat" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +144,13 @@
       <option name="presentableId" value="LOCAL−00009" />
       <updated>1582305399949</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL−00010" summary="Liten Database App">
+      <created>1582385999409</created>
+      <option name="number" value="LOCAL−00010" />
+      <option name="presentableId" value="LOCAL−00010" />
+      <updated>1582385999409</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -169,42 +176,42 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="529" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1582054330119" />
-    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582040616114">
+    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582386747708">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582040616114" />
-    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582305398621">
+    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582386747708" />
+    <state x="440" y="24" key="CommitChangelistDialog2" timestamp="1582385998128">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582305398621" />
-    <state width="1557" height="370" key="GridCell.Tab.0.bottom" timestamp="1582385911803">
+    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582385998128" />
+    <state width="1557" height="530" key="GridCell.Tab.0.bottom" timestamp="1582387660115">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="370" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582385911803" />
+    <state width="1557" height="530" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582387660115" />
     <state width="1868" height="268" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
-    <state width="1557" height="370" key="GridCell.Tab.0.center" timestamp="1582385911803">
+    <state width="1557" height="530" key="GridCell.Tab.0.center" timestamp="1582387660115">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="370" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582385911803" />
+    <state width="1557" height="530" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582387660115" />
     <state width="1868" height="268" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
-    <state width="1557" height="370" key="GridCell.Tab.0.left" timestamp="1582385911803">
+    <state width="1557" height="530" key="GridCell.Tab.0.left" timestamp="1582387660115">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="370" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582385911803" />
+    <state width="1557" height="530" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582387660115" />
     <state width="1868" height="268" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936764" />
-    <state width="1557" height="370" key="GridCell.Tab.0.right" timestamp="1582385911803">
+    <state width="1557" height="530" key="GridCell.Tab.0.right" timestamp="1582387660115">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state width="1557" height="370" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582385911803" />
+    <state width="1557" height="530" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582387660115" />
     <state width="1868" height="268" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1582202936765" />
     <state x="301" y="9" key="SettingsEditor" timestamp="1582127795416">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582127795416" />
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582305406809">
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2" timestamp="1582386004112">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582305406809" />
+    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582386004112" />
     <state x="496" y="255" key="com.intellij.ide.util.TipDialog" timestamp="1582040843810">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
@@ -221,10 +228,10 @@
       <screen x="0" y="0" width="1600" height="860" />
     </state>
     <state x="496" y="28" width="607" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1581956347541" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1582303486853">
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1582387500302">
       <screen x="0" y="0" width="1600" height="860" />
     </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582303486853" />
+    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582387500302" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

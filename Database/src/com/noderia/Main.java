@@ -23,7 +23,6 @@ public class Main {
                 Sql sql = new Sql(prompt, currentDB, inputText);
                 prompt = sql.prompt;
                 currentDB = sql.currentDB;
-                System.out.println(currentDB.getDbName());
             }
 
         }

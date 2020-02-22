@@ -96,21 +96,25 @@ public class Sql {
             t1.setTableName(tableName);
 
             // Extract fields from sql
-            String fieldString = sql.substring(sql.indexOf("(") + 1, sql.indexOf(")"));
-            //    System.out.println(fieldString);
+            String fieldString = sql.substring(sql.indexOf("(") + 1, sql.lastIndexOf(")"));
+            System.out.println(fieldString);
             // Split fieldString into fields array
             String[] fields = fieldString.split(",");
 
             // loop trough fields array
             for (String field : fields) {
+                // strip leading and trailing spaces
+                field = field.strip();
                 // Split array into new array of each word in field statement
                 String[] fieldElement = field.split(" ");
+
 
                 // Create fields and set attributes
                 Field f1 = new Field();
                 f1.setName(fieldElement[0]);
                 f1.setDataType(fieldElement[1]);
 
+                System.out.println("DataType = " + fieldElement[1]);
                 if (field.contains("primary key")) {
                     f1.setPrimaryKey(true);
                 }
@@ -129,7 +133,6 @@ public class Sql {
             } // end create and add fields to table
 
             // Add newly created table to currentDB
-            System.out.println("currentDB = " + currentDB.getDbName());
             currentDB.addTable(currentDB, t1);
 
 
