@@ -1,5 +1,8 @@
 package com.noderia;
 
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.io.Serializable;
 import java.util.HashMap;
 
@@ -60,6 +63,16 @@ public class Table implements Serializable {
 
     public void saveTableStructure() {
 
+    }
+
+    // create the physical table file
+    public void writeTableToDisk(String dbName) {
+        try {
+            PrintWriter out = new PrintWriter(new File(dbName + "/" + tableName + ".tbl"));
+        } catch (FileNotFoundException e) {
+            System.out.println("Table could not we written to disk: ");
+            e.printStackTrace();
+        }
     }
 
 

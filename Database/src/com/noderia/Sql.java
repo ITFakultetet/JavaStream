@@ -97,7 +97,7 @@ public class Sql {
 
             // Extract fields from sql
             String fieldString = sql.substring(sql.indexOf("(") + 1, sql.lastIndexOf(")"));
-            System.out.println(fieldString);
+
             // Split fieldString into fields array
             String[] fields = fieldString.split(",");
 
@@ -114,7 +114,7 @@ public class Sql {
                 f1.setName(fieldElement[0]);
                 f1.setDataType(fieldElement[1]);
 
-                System.out.println("DataType = " + fieldElement[1]);
+            //    System.out.println("DataType = " + fieldElement[1]);
                 if (field.contains("primary key")) {
                     f1.setPrimaryKey(true);
                 }
@@ -134,7 +134,7 @@ public class Sql {
 
             // Add newly created table to currentDB
             currentDB.addTable(currentDB, t1);
-
+            t1.writeTableToDisk(currentDB.getDbName());
 
         } // end create table
 

@@ -89,21 +89,24 @@ public class Database implements Serializable {
 
     public void saveDatabase(Database outDB) throws IOException {
 
-        System.out.println("Saves: " + outDB.getDbName());
-        try {
+             try {
 
-            java.nio.file.Files.deleteIfExists(Paths.get(outDB.dbName + ".dat"));
+                 if (!java.nio.file.Files.isDirectory(Paths.get(outDB.dbName))) {
+                     java.nio.file.Files.createDirectory(Paths.get(outDB.dbName));
+                 }
 
-            FileOutputStream dbFile = new FileOutputStream(outDB.dbName + ".dat");
-            ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
-            os.writeObject(outDB);
-            os.flush();
-            os.close();
-            dbFile.flush();
-            dbFile.close();
+                 java.nio.file.Files.deleteIfExists(Paths.get(outDB.dbName + "/" + outDB.dbName + ".db"));
+
+                 FileOutputStream dbFile = new FileOutputStream(outDB.dbName + "/" + outDB.dbName + ".db");
+                 ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
+                 os.writeObject(outDB);
+                 os.flush();
+                 os.close();
+                 dbFile.flush();
+                 dbFile.close();
 
 
-        } catch (IOException e) {
+             } catch (IOException e) {
             System.out.println("Not able to save database file. Message: " + e.getMessage());
         }
     }
@@ -112,7 +115,7 @@ public class Database implements Serializable {
     public Database openDatabase(String dbName) {
         ObjectInputStream dbIs;
         Database openedDB = new Database();
-        try (FileInputStream dbFile = new FileInputStream(dbName + ".dat")) {
+        try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
             dbIs = new ObjectInputStream(new BufferedInputStream(dbFile));
             openedDB = (Database) dbIs.readObject();
         } catch (FileNotFoundException e) {
@@ -128,7 +131,7 @@ public class Database implements Serializable {
     public void showDatabase(String dbName) throws IOException, ClassNotFoundException {
 
         ObjectInputStream is;
-        try (FileInputStream dbFile = new FileInputStream(dbName + ".dat")) {
+        try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
             is = new ObjectInputStream(new BufferedInputStream(dbFile));
             Database db = (Database) is.readObject();
             System.out.println("Database Info");
@@ -140,6 +143,7 @@ public class Database implements Serializable {
             System.out.println("-".repeat(40));
             db.printTables();
             System.out.println("-".repeat(40));
+            System.out.println();
             System.out.println("Tabellstrukturer");
             System.out.println("-".repeat(40));
             db.tables.forEach((k, v) -> {
