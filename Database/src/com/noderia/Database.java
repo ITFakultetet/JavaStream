@@ -1,8 +1,5 @@
 package com.noderia;
 
-import com.google.common.io.Files;
-
-import java.awt.image.DataBuffer;
 import java.io.*;
 import java.nio.file.Paths;
 import java.util.HashMap;
@@ -36,6 +33,24 @@ public class Database implements Serializable {
         this.charSet = charSet;
         this.collation = collation;
         this.users = users;
+    }
+
+    public static void deleteDatabase(String dbName) {
+
+        try {
+
+            HelperMethods.recursiveDelete(new File(dbName));
+            java.nio.file.Files.deleteIfExists(Paths.get(dbName + "/*.*"));
+
+            java.nio.file.Files.deleteIfExists(Paths.get(dbName));
+            System.out.println("Database deleted.");
+
+        } catch (IOException e) {
+            System.out.println("Database " + dbName + " could not be deleted.");
+            e.printStackTrace();
+        }
+
+
     }
 
     public String getDbName() {
@@ -89,28 +104,28 @@ public class Database implements Serializable {
 
     public void saveDatabase(Database outDB) throws IOException {
 
-             try {
+        try {
 
-                 if (!java.nio.file.Files.isDirectory(Paths.get(outDB.dbName))) {
-                     java.nio.file.Files.createDirectory(Paths.get(outDB.dbName));
-                 }
+            if (!java.nio.file.Files.isDirectory(Paths.get(outDB.dbName))) {
 
-                 java.nio.file.Files.deleteIfExists(Paths.get(outDB.dbName + "/" + outDB.dbName + ".db"));
+                // Create directory for database files
+                java.nio.file.Files.createDirectory(Paths.get(outDB.dbName));
 
-                 FileOutputStream dbFile = new FileOutputStream(outDB.dbName + "/" + outDB.dbName + ".db");
-                 ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
-                 os.writeObject(outDB);
-                 os.flush();
-                 os.close();
-                 dbFile.flush();
-                 dbFile.close();
+            }
 
+            FileOutputStream dbFile = new FileOutputStream(outDB.dbName + "/" + outDB.dbName + ".db");
+            ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
+            os.writeObject(outDB);
+            os.flush();
+            os.close();
+            dbFile.flush();
+            dbFile.close();
 
-             } catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Not able to save database file. Message: " + e.getMessage());
         }
-    }
 
+    }
 
     public Database openDatabase(String dbName) {
         ObjectInputStream dbIs;

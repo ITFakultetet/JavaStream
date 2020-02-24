@@ -1,6 +1,7 @@
 package com.noderia;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 
 public class Sql {
     private String sql = "";
@@ -27,29 +28,36 @@ public class Sql {
         if (sql.toLowerCase().startsWith("create database")) {
 
             String dbName = words[2];
-            for (int i = 0; i < words.length; i++) {
-                // Find Character set
-                if (words[i].equals("charset")) {
-                    charset = words[i + 1];
+
+            if (java.nio.file.Files.isDirectory(Paths.get(dbName))) {
+                System.out.println("Database already exists");
+                return;
+            } else {
+
+                for (int i = 0; i < words.length; i++) {
+                    // Find Character set
+                    if (words[i].equals("charset")) {
+                        charset = words[i + 1];
+                    }
+                    // Find Collation
+                    if (words[i].equals("collation")) {
+                        collation = words[i + 1];
+                    }
+
                 }
-                // Find Collation
-                if (words[i].equals("collation")) {
-                    collation = words[i + 1];
+
+                Database db1 = new Database(dbName);
+                if (charset != "") db1.setCharSet(charset);
+                if (collation != "") db1.setCollation(collation);
+                try {
+                    db1.saveDatabase(db1);
+                    System.out.println("Database " + db1.getDbName() + " saved.");
+                    currentDB = db1;
+                } catch (IOException e) {
+                    e.printStackTrace();
                 }
 
-            }
-
-            Database db1 = new Database(dbName);
-            if (charset != "") db1.setCharSet(charset);
-            if (collation != "") db1.setCollation(collation);
-            try {
-                db1.saveDatabase(db1);
-                System.out.println("Database " + db1.getDbName() + " saved.");
-                currentDB = db1;
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
+            } // end else
         } // end create database
 
         // describe database <dbname>
@@ -114,7 +122,7 @@ public class Sql {
                 f1.setName(fieldElement[0]);
                 f1.setDataType(fieldElement[1]);
 
-            //    System.out.println("DataType = " + fieldElement[1]);
+                //    System.out.println("DataType = " + fieldElement[1]);
                 if (field.contains("primary key")) {
                     f1.setPrimaryKey(true);
                 }
@@ -138,5 +146,12 @@ public class Sql {
 
         } // end create table
 
+
+        // SQL: DROP DATABASE
+        if (sql.toLowerCase().startsWith("drop database")) {
+            String dbName = words[2];
+            Database.deleteDatabase(dbName);
+
+        }
     }
 }
