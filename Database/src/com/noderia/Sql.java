@@ -2,11 +2,12 @@ package com.noderia;
 
 import java.io.IOException;
 import java.nio.file.Paths;
+import java.time.LocalDateTime;
 
 public class Sql {
-    private String sql = "";
     public String prompt = "/";
     public Database currentDB;
+    private String sql = "";
 
 
     public Sql(String prompt, Database currentDB, String sql) {
@@ -28,6 +29,7 @@ public class Sql {
         if (sql.toLowerCase().startsWith("create database")) {
 
             String dbName = words[2];
+            LocalDateTime created = LocalDateTime.now();
 
             if (java.nio.file.Files.isDirectory(Paths.get(dbName))) {
                 System.out.println("Database already exists");
@@ -49,6 +51,9 @@ public class Sql {
                 Database db1 = new Database(dbName);
                 if (charset != "") db1.setCharSet(charset);
                 if (collation != "") db1.setCollation(collation);
+
+                db1.setCreated(created);
+
                 try {
                     db1.saveDatabase(db1);
                     System.out.println("Database " + db1.getDbName() + " saved.");
@@ -60,9 +65,14 @@ public class Sql {
             } // end else
         } // end create database
 
-        // SQL: DESCRIBE DATABAS <dbname>
-        if (sql.toLowerCase().startsWith("describe database") || (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2)) {
+        // SQL: DESCRIBE <FULL> DATABASE <dbname>
+        if (sql.toLowerCase().startsWith("describe database")
+                || sql.toLowerCase().startsWith("describe full database")
+                || (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2)
+                || (sql.toLowerCase().startsWith("describe full") && this.prompt.length() > 2)
+        ) {
             String dbName;
+            boolean full;
             Database showDB = new Database();
 
             // if sql = describe <dbname>
@@ -74,8 +84,14 @@ public class Sql {
                 showDB.setDbName(dbName);
             }
 
+            if (sql.toLowerCase().contains("full")) {
+                full = true;
+            } else {
+                full = false;
+            }
+
             try {
-                showDB.describeDatabase(dbName);
+                showDB.describeDatabase(dbName, full);
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
             }

@@ -118,10 +118,12 @@ public class Database implements Serializable {
     }
 
     public void printTables() {
-
-        System.out.printf("%-3s %-20s %-15s %-10s", "#", "Table Name", "Character set", "Collation");
-        System.out.println();
+        System.out.println("-".repeat(65));
+        System.out.printf("%-3s %-20s %-15s %-10s\n", "#", "Table Name", "Character set", "Collation");
+        System.out.println("-".repeat(65));
         tables.forEach((k, v) -> System.out.printf("%-3d %-20s %-15s %-10s\n", k, v.getTableName(), v.getCharSet(), v.getCollation()));
+        System.out.println("-".repeat(65));
+
     }
 
     public void saveDatabase(Database outDB) throws IOException {
@@ -165,37 +167,49 @@ public class Database implements Serializable {
         return openedDB;
     }
 
-    public void describeDatabase(String dbName) throws IOException, ClassNotFoundException {
+    public void describeDatabase(String dbName, boolean full) throws IOException, ClassNotFoundException {
 
         ObjectInputStream is;
         try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
             is = new ObjectInputStream(new BufferedInputStream(dbFile));
             Database db = (Database) is.readObject();
+            System.out.println("-".repeat(65));
             System.out.println("Database Info");
             System.out.println("-".repeat(65));
-            System.out.println("Name: " + db.dbName + " - Default Character Set: " + db.getCharSet() + " - Default Collation: " + db.getCollation());
-            System.out.println("-".repeat(65));
+            System.out.printf("%-30s %-30s\n", "Database Name: ", db.dbName);
+            System.out.printf("%-30s %-30s\n", "Default Character Set: ", db.getCharSet());
+            System.out.printf("%-30s %-30s\n", "Default Collation: ", db.getCollation());
+            System.out.printf("%-30s %-30s\n", "Created: ", db.getCreated());
+            System.out.printf("%-30s %-30s\n", "Tables: ", db.tables.size());
 
-            System.out.println("Tables");
-            System.out.println("-".repeat(65));
-            db.printTables();
             System.out.println("-".repeat(65));
             System.out.println();
-            System.out.println("Tabellstrukturer");
-            System.out.println("-".repeat(65));
-            db.tables.forEach((k, v) -> {
-                System.out.println("Table Name: " + v.getTableName());
-                System.out.println("-".repeat(65));
-                v.printTableStructure();
-                System.out.println();
-            });
 
+            // print table structures, if database has tables and sql = describe full
+
+
+            System.out.println("Tables");
+            db.printTables();
+
+            if (full && db.tables.size() > 0) {
+                System.out.println();
+                System.out.println("Tabellstrukturer");
+
+                db.tables.forEach((k, v) -> {
+                    System.out.println("-".repeat(65));
+                    System.out.println("Table Name: " + v.getTableName());
+                    System.out.println("-".repeat(65));
+                    v.printTableStructure();
+                    System.out.println();
+                });
+
+            }
             is.close();
 
         } catch (IOException e) {
-            System.out.println("Database unknown" + e.getMessage());
+            System.out.println("Database unknown " + e.getMessage());
         } catch (ClassNotFoundException e) {
-            System.out.println("Class not found" + e.getMessage());
+            System.out.println("Class not found " + e.getMessage());
         }
     }
 
