@@ -2,12 +2,14 @@ package com.noderia;
 
 import java.io.*;
 import java.nio.file.Paths;
+import java.time.LocalDateTime;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Database implements Serializable {
     private String dbName, charSet, collation;
     private Map users;
+    private LocalDateTime created;
     private HashMap<Integer, Table> tables = new HashMap<>();
 
     public Database() {
@@ -34,6 +36,7 @@ public class Database implements Serializable {
         this.collation = collation;
         this.users = users;
     }
+
 
     public static void deleteDatabase(String dbName) {
 
@@ -85,6 +88,22 @@ public class Database implements Serializable {
         this.users = users;
     }
 
+    public LocalDateTime getCreated() {
+        return created;
+    }
+
+    public void setCreated(LocalDateTime created) {
+        this.created = created;
+    }
+
+    public HashMap<Integer, Table> getTables() {
+        return tables;
+    }
+
+    public void setTables(HashMap<Integer, Table> tables) {
+        this.tables = tables;
+    }
+
     public void addTable(Database db, Table table) {
 
         try {
@@ -99,7 +118,10 @@ public class Database implements Serializable {
     }
 
     public void printTables() {
-        tables.forEach((k, v) -> System.out.println(k + " " + v.getTableName() + " " + v.getCharSet() + " " + v.getCollation()));
+
+        System.out.printf("%-3s %-20s %-15s %-10s", "#", "Table Name", "Character set", "Collation");
+        System.out.println();
+        tables.forEach((k, v) -> System.out.printf("%-3d %-20s %-15s %-10s\n", k, v.getTableName(), v.getCharSet(), v.getCollation()));
     }
 
     public void saveDatabase(Database outDB) throws IOException {
@@ -143,27 +165,27 @@ public class Database implements Serializable {
         return openedDB;
     }
 
-    public void showDatabase(String dbName) throws IOException, ClassNotFoundException {
+    public void describeDatabase(String dbName) throws IOException, ClassNotFoundException {
 
         ObjectInputStream is;
         try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
             is = new ObjectInputStream(new BufferedInputStream(dbFile));
             Database db = (Database) is.readObject();
             System.out.println("Database Info");
-            System.out.println("-".repeat(40));
+            System.out.println("-".repeat(65));
             System.out.println("Name: " + db.dbName + " - Default Character Set: " + db.getCharSet() + " - Default Collation: " + db.getCollation());
-            System.out.println("-".repeat(40));
+            System.out.println("-".repeat(65));
 
             System.out.println("Tables");
-            System.out.println("-".repeat(40));
+            System.out.println("-".repeat(65));
             db.printTables();
-            System.out.println("-".repeat(40));
+            System.out.println("-".repeat(65));
             System.out.println();
             System.out.println("Tabellstrukturer");
-            System.out.println("-".repeat(40));
+            System.out.println("-".repeat(65));
             db.tables.forEach((k, v) -> {
                 System.out.println("Table Name: " + v.getTableName());
-                System.out.println("-".repeat(40));
+                System.out.println("-".repeat(65));
                 v.printTableStructure();
                 System.out.println();
             });

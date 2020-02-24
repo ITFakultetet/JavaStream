@@ -24,7 +24,7 @@ public class Sql {
         String[] words = sql.split("[= ]");
         String charset = "", collation = "";
 
-        // create database <dbname>
+        // SQL: CREATE DATABASE <dbname>
         if (sql.toLowerCase().startsWith("create database")) {
 
             String dbName = words[2];
@@ -60,7 +60,7 @@ public class Sql {
             } // end else
         } // end create database
 
-        // describe database <dbname>
+        // SQL: DESCRIBE DATABAS <dbname>
         if (sql.toLowerCase().startsWith("describe database") || (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2)) {
             String dbName;
             Database showDB = new Database();
@@ -75,7 +75,7 @@ public class Sql {
             }
 
             try {
-                showDB.showDatabase(dbName);
+                showDB.describeDatabase(dbName);
             } catch (IOException | ClassNotFoundException e) {
                 e.printStackTrace();
             }
@@ -93,13 +93,12 @@ public class Sql {
 
         } // end use
 
-        // SQL: CREATE TABLE
+        // SQL: CREATE TABLE <tablename> <default charset> <default collation>
         if (sql.toLowerCase().startsWith("create table")) {
             // Determine table name
             String tableName = words[2];
 
             // Create new table in memory
-
             Table t1 = new Table();
             t1.setTableName(tableName);
 
@@ -125,9 +124,10 @@ public class Sql {
                 //    System.out.println("DataType = " + fieldElement[1]);
                 if (field.contains("primary key")) {
                     f1.setPrimaryKey(true);
+                    f1.setNotNull(true);
                 }
 
-                if (field.contains("auto_increment")) {
+                if (field.contains("auto_increment") || field.contains("identity")) {
                     f1.setAutoIncrement(true);
                 }
 
