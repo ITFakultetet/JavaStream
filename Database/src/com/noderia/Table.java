@@ -58,13 +58,14 @@ public class Table implements Serializable {
     }
 
     public void printTableStructure() {
-        System.out.println("-".repeat(80));
+
+
         System.out.println("Table Name: " + tableName);
-        System.out.println("-".repeat(80));
-        System.out.printf("%-3s %-25s %-15s %-10s %-12s %-10s\n", "#", "Field Name", "Data Type", "Not Null", "Primary Key", "Identity");
-        System.out.println("-".repeat(80));
-        tableStructure.forEach((k, v) -> System.out.printf("%-3d %-25s %-15s %-10s %-12s %-10s\n", k, v.getName(), v.getDataType(), v.isNotNull(), v.isPrimaryKey(), v.isAutoIncrement()));
-        System.out.println("-".repeat(80));
+        System.out.println("+" + "-".repeat(85) + "+");
+        System.out.printf("| %-3s | %-20s | %-15s | %-10s | %-12s | %-8s |\n", "#", "Field", "Data Type", "Not Null", "Primary Key", "Identity");
+        System.out.println("+" + "-".repeat(85) + "+");
+        tableStructure.forEach((k, v) -> System.out.printf("| %-3d | %-20s | %-15s | %-10s | %-12s | %-8s |\n", k, v.getName(), v.getDataType(), v.isNotNull(), v.isPrimaryKey(), v.isAutoIncrement()));
+        System.out.println("+" + "-".repeat(85) + "+");
     }
 
     public void saveTableStructure() {
