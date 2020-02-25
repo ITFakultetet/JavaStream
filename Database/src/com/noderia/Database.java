@@ -42,8 +42,8 @@ public class Database implements Serializable {
 
         try {
 
-            HelperMethods.recursiveDelete(new File(dbName));
-            java.nio.file.Files.deleteIfExists(Paths.get(dbName + "/*.*"));
+            HelperMethods.recursiveDelete(new File("data/" + dbName));
+            java.nio.file.Files.deleteIfExists(Paths.get("data/" + dbName + "/*.*"));
 
             java.nio.file.Files.deleteIfExists(Paths.get(dbName));
             System.out.println("Database deleted.");
@@ -203,12 +203,9 @@ public class Database implements Serializable {
 
             if (full && db.tables.size() > 0) {
                 System.out.println();
-                System.out.println("Tabellstrukturer");
+                System.out.println("Table Structures");
 
                 db.tables.forEach((k, v) -> {
-                    System.out.println("-".repeat(65));
-                    System.out.println("Table Name: " + v.getTableName());
-                    System.out.println("-".repeat(65));
                     v.printTableStructure();
                     System.out.println();
                 });
