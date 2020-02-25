@@ -3,6 +3,7 @@ package com.noderia;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 
 public class Sql {
     public String prompt = "/";
@@ -64,6 +65,23 @@ public class Sql {
 
             } // end else
         } // end create database
+
+        // SQL: SHOW DATABASES
+        if (sql.toLowerCase().equals("show databases")) {
+
+            ArrayList<String> dbNames = HelperMethods.findDatabases();
+
+            if (dbNames.isEmpty()) {
+                System.out.println("No databases found, Create one?");
+            } else {
+                System.out.println("-".repeat(65));
+                System.out.println("Database");
+                System.out.println("-".repeat(65));
+                dbNames.forEach(name -> System.out.println(name));
+                System.out.println("-".repeat(65));
+            }
+
+        }
 
         // SQL: DESCRIBE <FULL> DATABASE <dbname>
         if (sql.toLowerCase().startsWith("describe database")

@@ -68,7 +68,7 @@ public class Table implements Serializable {
     // create the physical table file
     public void writeTableToDisk(String dbName) {
         try {
-            PrintWriter out = new PrintWriter(new File(dbName + "/" + tableName + ".tbl"));
+            PrintWriter out = new PrintWriter(new File("data/" + dbName + "/" + tableName + ".tbl"));
         } catch (FileNotFoundException e) {
             System.out.println("Table could not we written to disk: ");
             e.printStackTrace();

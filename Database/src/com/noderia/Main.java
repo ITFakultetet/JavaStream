@@ -10,8 +10,9 @@ public class Main {
 
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-        System.out.println("Welcome to MicroDB");
+        System.out.println("Welcome to Trophonius - a Simple and Fast Database");
         System.out.println("Version 0.0.1");
+        System.out.println("Type 'quit' to exit");
 
         // Main Menu
         while (true) {

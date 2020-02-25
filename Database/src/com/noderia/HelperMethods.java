@@ -1,6 +1,8 @@
 package com.noderia;
 
 import java.io.File;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 
 public class HelperMethods {
 
@@ -22,4 +24,25 @@ public class HelperMethods {
     }
 
 
+    public static ArrayList<String> findDatabases() {
+
+        ArrayList<String> dbNames = new ArrayList<>();
+
+        if (java.nio.file.Files.isDirectory(Paths.get("data"))) {
+            File rootDir = new File("data");
+
+            for (File dir : rootDir.listFiles()) {
+                if (dir.isDirectory()) {
+
+                    dbNames.add(dir.getName());
+
+                }
+            }
+        }
+
+        return dbNames;
+    }
+
 }
+
+

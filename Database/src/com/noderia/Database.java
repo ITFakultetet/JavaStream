@@ -130,14 +130,23 @@ public class Database implements Serializable {
 
         try {
 
-            if (!java.nio.file.Files.isDirectory(Paths.get(outDB.dbName))) {
-
-                // Create directory for database files
-                java.nio.file.Files.createDirectory(Paths.get(outDB.dbName));
+            // check if data directory exists
+            if (!java.nio.file.Files.isDirectory(Paths.get("data"))) {
+                // Create data directory
+                java.nio.file.Files.createDirectory(Paths.get("data"));
 
             }
 
-            FileOutputStream dbFile = new FileOutputStream(outDB.dbName + "/" + outDB.dbName + ".db");
+            // check if database directory exists in data directory
+            if (!java.nio.file.Files.isDirectory(Paths.get("data/" + outDB.dbName))) {
+
+                // Create directory for database files
+                java.nio.file.Files.createDirectory(Paths.get("data/" + outDB.dbName));
+
+            }
+
+            // write .db file
+            FileOutputStream dbFile = new FileOutputStream("data/" + outDB.dbName + "/" + outDB.dbName + ".db");
             ObjectOutputStream os = new ObjectOutputStream(new BufferedOutputStream(dbFile));
             os.writeObject(outDB);
             os.flush();
@@ -154,7 +163,7 @@ public class Database implements Serializable {
     public Database openDatabase(String dbName) {
         ObjectInputStream dbIs;
         Database openedDB = new Database();
-        try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
+        try (FileInputStream dbFile = new FileInputStream("data/" + dbName + "/" + dbName + ".db")) {
             dbIs = new ObjectInputStream(new BufferedInputStream(dbFile));
             openedDB = (Database) dbIs.readObject();
         } catch (FileNotFoundException e) {
@@ -170,7 +179,7 @@ public class Database implements Serializable {
     public void describeDatabase(String dbName, boolean full) throws IOException, ClassNotFoundException {
 
         ObjectInputStream is;
-        try (FileInputStream dbFile = new FileInputStream(dbName + "/" + dbName + ".db")) {
+        try (FileInputStream dbFile = new FileInputStream("data/" + dbName + "/" + dbName + ".db")) {
             is = new ObjectInputStream(new BufferedInputStream(dbFile));
             Database db = (Database) is.readObject();
             System.out.println("-".repeat(65));
@@ -187,9 +196,10 @@ public class Database implements Serializable {
 
             // print table structures, if database has tables and sql = describe full
 
-
-            System.out.println("Tables");
-            db.printTables();
+            if (db.tables.size() > 0) {
+                System.out.println("Tables");
+                db.printTables();
+            }
 
             if (full && db.tables.size() > 0) {
                 System.out.println();
