@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public class Sql {
     public String prompt = "/";
@@ -81,12 +82,23 @@ public class Sql {
                 System.out.println("-".repeat(65));
             }
 
+        } // END SHOW DATABASES
+
+        // SQL: SHOW TABLES
+        if (sql.toLowerCase().equals("show tables")) {
+
+            if (prompt.length() > 2) {
+                currentDB.printTables();
+            } else {
+                System.out.println("No database selected. Type: use <dbname> to select one");
+            }
+
         }
+
 
         // SQL: DESCRIBE <FULL> DATABASE <dbname>
         if (sql.toLowerCase().startsWith("describe database")
                 || sql.toLowerCase().startsWith("describe full database")
-                || (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2)
                 || (sql.toLowerCase().startsWith("describe full") && this.prompt.length() > 2)
         ) {
             String dbName;
@@ -115,6 +127,24 @@ public class Sql {
             }
 
         } // end describe database
+
+        // SQL: DESCRIBE <table name>
+        if (sql.toLowerCase().startsWith("describe") && this.prompt.length() > 2) {
+
+            String tableName = words[1];
+            AtomicBoolean tableExists = new AtomicBoolean(false);
+            currentDB.getTables().forEach((k, v) -> {
+                if (v.getTableName().equals(tableName)) {
+                    v.printTableStructure();
+                    tableExists.set(true);
+                }
+            });
+
+            if (!tableExists.getAcquire()) {
+                System.out.println("Table does not exist");
+            }
+        }
+
 
         // SQL: USE <dbname>
         if (sql.toLowerCase().startsWith("use")) {
