@@ -29,13 +29,30 @@ public class ArrayEks {
 		Arrays.stream(tall).forEach(System.out::println);
 		System.out.println("------------");
 
-		// Gange hvert tall med 2 og skrive ut resultatet
+		// Gange hvert tall med 2, sortere synkende og skrive ut resultatet
 		System.out.println("Hvert tall ganger 2, sortert i synkende rekkefølge og skrevet ut med map() og forEach()");
 		Arrays.stream(tall).sorted(Comparator.reverseOrder()).map(x -> x * 2).forEach(System.out::println);
 		System.out.println("------------");
 
+		// Finn største og minste verdien i et array
+		// Største verdi med Arrays.stream()
+		int max = Arrays.stream(tall).max(Comparator.naturalOrder()).get();
+		System.out.println("Høyeste  tall: "+max);
+		System.out.println("------------");
+
+		// Minste verdi med for-løkke:
+		int min = Integer.MAX_VALUE;
+		for (int i = 0; i < tall.length; i++) {
+			if(tall[i] < min) {
+				min = tall[i];
+			}
+		}
+		System.out.println("Minste tall: "+ min);
+		System.out.println("------------");
+
+
 		// Array med tekst
-		// Lag et array med new String[<tall>]
+		// Lag et array for tekst-elementer med new String[<tall>]
 		String[] tekst = new String[3];
 
 		tekst[0] = "Dette er tekst 1";
@@ -146,6 +163,7 @@ public class ArrayEks {
 
 		System.out.println("Antal rader i tabellen: " + Arrays.stream(tabell).count());
 
+		// Skriv ut tabellen - tabulator-separert
 		Arrays.stream(tabell).map(a -> a[0] + "\t" + a[1] + "\t" + a[2]).forEach(System.out::println);
 
 	} // end main
