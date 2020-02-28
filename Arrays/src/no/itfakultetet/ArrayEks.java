@@ -41,9 +41,9 @@ public class ArrayEks {
 		System.out.println("------------");
 
 		// Minste verdi med for-løkke:
-		int min = Integer.MAX_VALUE;
+		int min = tall[0];  // min = første tall i arrayet
 		for (int i = 0; i < tall.length; i++) {
-			if(tall[i] < min) {
+			if(tall[i] < min) {   // er neste tall mindre, blir tallet det nye "min"
 				min = tall[i];
 			}
 		}
