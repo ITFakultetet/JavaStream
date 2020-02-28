@@ -16,11 +16,11 @@ public class ArrayEks {
 			System.out.println(tall[i]);
 		}
 		System.out.println("------------");
-
-		// Skriv ut med forbedret for-løkke
 		System.out.println("Med forbedret for-løkke");
+		// Skriv ut med forbedret for-løkke
 		for (int i : tall) {
 			System.out.println(i);
+
 		}
 		System.out.println("------------");
 
@@ -85,12 +85,17 @@ public class ArrayEks {
 				.println("Skriv bare ut elementer sin inneholder ordet \"ny\" ved bruk av stream().filter().forEach()");
 		Arrays.stream(tekst).filter(a -> a.contains("ny")).forEach(System.out::println);
 
+		System.out.println("------------");
+
+		// Skriv ut antall elementer med Arrays.stream().count();
 		System.out.println("Antall elementer i tekst-Arrayet: "+Arrays.stream(tekst).count());
+		System.out.println("------------");
+
 
 		// Flerdimensjonale Arrays
 		// Tabell med 3 rader og 3 kollonner
 
-		System.out.println();
+
 		String[][] tabell = new String[3][3];
 
 		tabell[0][0] = "Donald";
