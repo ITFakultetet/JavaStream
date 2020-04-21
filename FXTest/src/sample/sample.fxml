@@ -3,9 +3,34 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal" fx:controller="sample.MainController">
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.MainController" accessibleHelp=""
+stylesheets="/css/styles.css">
 
-    <Button onAction="#sayHelloWorld" text="Say 'Hello World'" />
-    <Label fx:id="helloWorld" text="Label" GridPane.rowIndex="1" />
+
+    <Button onAction="#sayHelloWorld" text="Say 'Hello World'" GridPane.rowIndex="1" />
+    <Label fx:id="helloWorld" text="Label" GridPane.rowIndex="2" />
+   <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE">
+     <tabs>
+       <Tab text="Hjem">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" />
+         </content>
+       </Tab>
+       <Tab text="Editor">
+         <content>
+           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="400.0" prefWidth="600.0" />
+         </content>
+       </Tab>
+     </tabs>
+   </TabPane>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+    
 
 </GridPane>
