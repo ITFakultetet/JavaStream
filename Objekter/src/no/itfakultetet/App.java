@@ -36,6 +36,9 @@ public class App {
 
         // Make a list of car makes
         List<String> carMakes = cars.stream().map(a -> a.getMake()).collect(Collectors.toList());
+        // Alternative with method reference
+        List<String> carMakes2 = cars.stream().map(Car::getMake).collect(Collectors.toList());
+
 
         // Print out all car makes from list with method reference to println
         System.out.println("\nAll Car Makes from new list");
@@ -51,6 +54,25 @@ public class App {
         System.out.println(cars.stream()
                 .filter(a-> a.getMake().contains("Nissan"))
                 .collect(Collectors.averagingInt(a -> a.getPrice())));
+
+        // Alternative with method reference
+        System.out.println(cars.stream()
+                .filter(a-> a.getMake().contains("Nissan"))
+                .collect(Collectors.averagingInt(Car::getPrice)));
+
+        // Alternative with mapToInt
+        System.out.println(cars.stream()
+                .filter(a-> a.getMake().contains("Nissan"))
+                .mapToInt(Car::getPrice)
+                .average().getAsDouble());
+
+
+        // Print out price of all cars with peek(), followed by the average price
+        System.out.println("\nPrices and Average Price:");
+        System.out.println(cars.stream()
+                .peek(a-> System.out.println(a.getPrice()))
+                .collect(Collectors.averagingInt(a -> a.getPrice())));
+
 
         // Print out cheapest car price
         System.out.println("\nLeast expensive car price:");
@@ -86,6 +108,10 @@ public class App {
         System.out.println("Min price: "+stats.getMin());
         System.out.println("Average price: "+ Math.round(stats.getAverage()));
         System.out.println("Value of all cars: "+stats.getSum());
+
+
+
+
 
     }
 }
