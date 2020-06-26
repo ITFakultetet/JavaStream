@@ -123,7 +123,5 @@ public class App {
             System.out.printf("%-20s %-10d\n",k,v);
         });
 
-
-
     }
 }
