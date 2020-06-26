@@ -9,12 +9,15 @@ public class App {
 
     public static void main(String[] args) {
 
-        Car car1 = new Car("Mercedes c180",2006,62000);
+
+        Car car1 = new Car("Mercedes c180",2016,120000);
         Car car2 = new Car("Volvo v90",2014,45000);
         Car car3 = new Car("Nissan Leaf",2018,53000);
         Car car4 = new Car("Nissan Leaf",2017,50000);
+        Car car5 = new Car("Mercedes c180",2006,62000);
+        Car car6 = new Car("Mercedes c180",2018,162000);
 
-        List<Car> cars = List.of(car1,car2,car3,car4);
+        List<Car> cars = List.of(car1,car2,car3,car4,car5,car6);
 
         // Print out all car makes with forEach()
         System.out.println("\nAll cars, sorted by price");
@@ -87,7 +90,7 @@ public class App {
 
         // Print out most expensive car
         System.out.println("\nMost expensive car:");
-        System.out.println(cars.stream().max((a,b) -> a.getPrice()).get());
+        System.out.println(cars.stream().max(Comparator.comparing(Car::getPrice)).get());
 
         // Print out unique car makes
         System.out.println("\nCar makes available:");
