@@ -26,7 +26,7 @@ public class App {
                 .forEach(a -> System.out.println(a.getMake()+" - "+a.getPrice()));
 
         // Print out number of Nissan cars available
-        System.out.print("Number of Nissan cars: ");
+        System.out.print("\nNumber of Nissan cars: ");
         System.out.println(cars.stream()
                 .filter(a -> a.getMake().contains("Nissan"))
                 .count());
@@ -35,7 +35,7 @@ public class App {
         System.out.println("\nModels from before 2018");
         cars.stream()
                 .filter(a -> a.getModel() < 2018)
-                .forEach(a -> System.out.println(a.getMake() +" "+ a.getModel()));
+                .forEach(a -> System.out.println(a.getMake() +" - "+ a.getModel()));
 
         // Make a list of car makes
         List<String> carMakes = cars.stream().map(a -> a.getMake()).collect(Collectors.toList());
@@ -113,6 +113,13 @@ public class App {
         System.out.println("Value of all cars: "+stats.getSum());
 
 
+        // Makes and number of cars
+        System.out.printf("\n%-20s %-10s\n", "Make", "Cars");
+        System.out.println("-".repeat(30));
+
+        cars.stream().collect(Collectors.groupingBy(Car::getMake,Collectors.counting())).forEach((k,v) -> {
+            System.out.printf("%-20s %-10d\n",k,v);
+        });
 
 
 
