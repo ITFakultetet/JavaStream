@@ -3,6 +3,7 @@ package no.itfakultetet;
 import java.util.Comparator;
 import java.util.IntSummaryStatistics;
 import java.util.List;
+import java.util.TreeMap;
 import java.util.stream.Collectors;
 
 public class App {
@@ -10,10 +11,10 @@ public class App {
     public static void main(String[] args) {
 
 
-        Car car1 = new Car("Mercedes c180",2016,120000);
-        Car car2 = new Car("Volvo v90",2014,45000);
-        Car car3 = new Car("Nissan Leaf",2018,53000);
-        Car car4 = new Car("Nissan Leaf",2017,50000);
+        Car car1 = new Car("Mercedes c180",2016,126000);
+        Car car2 = new Car("Volvo v90",2004,45000);
+        Car car3 = new Car("Nissan Leaf",2018,253000);
+        Car car4 = new Car("Nissan Leaf",2017,500000);
         Car car5 = new Car("Mercedes c180",2006,62000);
         Car car6 = new Car("Mercedes c180",2018,162000);
 
@@ -117,7 +118,8 @@ public class App {
         System.out.printf("\n%-20s %-10s\n", "Make", "Cars");
         System.out.println("-".repeat(30));
 
-        cars.stream().collect(Collectors.groupingBy(Car::getMake,Collectors.counting())).forEach((k,v) -> {
+        // Put Makes and numbers in a TreeMap and print to console
+        cars.stream().collect(Collectors.groupingBy(Car::getMake, TreeMap::new, Collectors.counting())).forEach((k, v) -> {
             System.out.printf("%-20s %-10d\n",k,v);
         });
 
