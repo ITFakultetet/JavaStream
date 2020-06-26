@@ -31,20 +31,23 @@ public class App {
             e.printStackTrace();
         }
 
-        TreeMap<String, Integer> ordListe = new TreeMap<>();
+//        Mulig, men ikke optimalt - Collectors.gr
+//        TreeMap<String,Long> ordListe = new TreeMap<>();
+//
+//        ord.forEach(
+//                a -> {
+//                    // Hvis ordet finnes på listen allerede, oppdater ordet med verdi = eksisterende verdi + 1
+//                    if (ordListe.containsKey(a)) {
+//                        ordListe.put(a, ordListe.get(a) + 1);
+//                    } else {
+//                        // Hvis ordet ikke finnes på listen, legg til ordet og sett verdien til 1
+//                        ordListe.put(a, 1);
+//                    }
+//                }
+//        );
+//
 
-        ord.forEach(
-                a -> {
-                    // Hvis ordet finnes på listen allerede, oppdater ordet med verdi = eksisterende verdi + 1
-                    if (ordListe.containsKey(a)) {
-                        ordListe.put(a, ordListe.get(a) + 1);
-                    } else {
-                        // Hvis ordet ikke finnes på listen, legg til ordet og sett verdien til 1
-                        ordListe.put(a, 1);
-                    }
-                }
-        );
-
+        TreeMap<String, Long> ordListe = ord.stream().collect(Collectors.groupingBy(a -> a,TreeMap::new,Collectors.counting()));
 
         try {
             FileWriter alfabetiskFil = new FileWriter("ord_alfabetisk.csv");
