@@ -12,6 +12,7 @@ public class App {
     public static void main(String[] args) {
 
         // Hent ord fra en fil, tell opp og putt i en TreeMap, alfabetiskListe
+        // Sorter etter antall ord, synkende, og lagre i en LinkedHashMap, forekomstListe
 
         Map<String, Long> alfabetiskListe = new TreeMap<>();
         Map<String, Long> forekomstListe = new LinkedHashMap<>();
@@ -43,7 +44,7 @@ public class App {
 
     }
 
-    // Metode for å skrive ordlisene til fil
+    // Metode for å skrive ordlistene til fil
     public static void skrivTilFil(String filNavn, Map<String,Long> liste ) {
         try {
 
