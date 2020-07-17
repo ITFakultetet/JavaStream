@@ -32,15 +32,8 @@ public class App {
         }
 
         // Skriv til fil
-        try {
-            FileWriter forekomstFil = new FileWriter("ord_forekomst.csv");
-
             skrivTilFil("ord_alfabetisk.csv",alfabetiskListe);
             skrivTilFil("ord_forekomst.csv",forekomstListe);
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
     }
 
