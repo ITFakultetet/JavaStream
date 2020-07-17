@@ -11,29 +11,30 @@ public class App {
 
     public static void main(String[] args) {
 
-        // Hent ord fra en fil, tell opp og putt i en TreeMap, alfabetiskListe
-        // Sorter etter antall ord, synkende, og lagre i en LinkedHashMap, forekomstListe
 
-        Map<String, Long> alfabetiskListe = new TreeMap<>();
-        Map<String, Long> forekomstListe = new LinkedHashMap<>();
+        Map<String, Long> ordAlfabetisk = new TreeMap<>();
+        Map<String, Long> ordForekomst= new LinkedHashMap<>();
         try {
-            alfabetiskListe = Files.lines(Paths.get("war-and-peace.txt"))
+            // Hent ord fra en fil, tell opp og putt i en TreeMap, ordAlfabetisk
+            ordAlfabetisk = Files.lines(Paths.get("war-and-peace.txt"))
                     .map(a -> a.split("[0-9!*?'\"\t.,;:() ]"))
                     .flatMap(a -> Arrays.stream(a))
                     .filter(a -> a.length() > 1 & !a.contains("CHAPTER") & !a.contains("-"))
                     .map(a -> a.toLowerCase())
                     .collect(Collectors.groupingBy(a -> a,TreeMap::new,Collectors.counting()));
-            forekomstListe = alfabetiskListe.entrySet().stream()
+            // Sorter ordAlfabetisk etter antall ord, synkende, og lagre i en LinkedHashMap, forekomstListe
+            ordForekomst = ordAlfabetisk.entrySet().stream()
                     .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                    .collect(Collectors.toMap(Map.Entry::getKey,Map.Entry::getValue,(a, b)->a,LinkedHashMap::new));
+                    .collect(Collectors.toMap(Map.Entry::getKey,
+                            Map.Entry::getValue,(a, b)->a,LinkedHashMap::new));
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
         }
 
         // Skriv til fil
-            skrivTilFil("ord_alfabetisk.csv",alfabetiskListe);
-            skrivTilFil("ord_forekomst.csv",forekomstListe);
+            skrivTilFil("ord_alfabetisk.csv",ordAlfabetisk);
+            skrivTilFil("ord_forekomst.csv",ordForekomst);
 
     }
 
