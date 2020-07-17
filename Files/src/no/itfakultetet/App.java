@@ -18,9 +18,9 @@ public class App {
         try {
             // Hent ord fra en fil, tell opp og putt i en TreeMap, ordAlfabetisk
             ordAlfabetisk = Files.lines(Paths.get("war-and-peace.txt"))
-                    .map(a -> a.split("[0-9!*?'\"\t.,;:() ]"))
+                    .map(a -> a.split("[0-9\\s+\\p{P}]"))
                     .flatMap(a -> Arrays.stream(a))
-                    .filter(a -> a.length() > 1 & !a.contains("CHAPTER") & !a.contains("-"))
+                    .filter(a -> a.length() > 0 & !a.contains("CHAPTER") & !a.contains("-"))
                     .map(a -> a.toLowerCase())
                     .collect(Collectors.groupingBy(a -> a,TreeMap::new,Collectors.counting()));
         } catch (IOException e) {
