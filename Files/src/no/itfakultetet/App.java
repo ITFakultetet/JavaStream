@@ -11,9 +11,10 @@ public class App {
 
     public static void main(String[] args) {
 
+        // Lag to maps - en for ord sortert alfabetisk og en for ord sortert etter hvor mange ganger de forekommer
+        Map<String, Long> ordAlfabetisk = new TreeMap<>(;
+        Map<String, Long> ordForekomst;
 
-        Map<String, Long> ordAlfabetisk = new TreeMap<>();
-        Map<String, Long> ordForekomst= new LinkedHashMap<>();
         try {
             // Hent ord fra en fil, tell opp og putt i en TreeMap, ordAlfabetisk
             ordAlfabetisk = Files.lines(Paths.get("war-and-peace.txt"))
@@ -22,15 +23,16 @@ public class App {
                     .filter(a -> a.length() > 1 & !a.contains("CHAPTER") & !a.contains("-"))
                     .map(a -> a.toLowerCase())
                     .collect(Collectors.groupingBy(a -> a,TreeMap::new,Collectors.counting()));
-            // Sorter ordAlfabetisk etter antall ord, synkende, og lagre i en LinkedHashMap, forekomstListe
-            ordForekomst = ordAlfabetisk.entrySet().stream()
-                    .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
-                    .collect(Collectors.toMap(Map.Entry::getKey,
-                            Map.Entry::getValue,(a, b)->a,LinkedHashMap::new));
         } catch (IOException e) {
             e.printStackTrace();
             System.exit(1);
         }
+
+        // Sorter ordAlfabetisk etter antall ord, synkende, og lagre i en LinkedHashMap, forekomstListe
+        ordForekomst = ordAlfabetisk.entrySet().stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .collect(Collectors.toMap(Map.Entry::getKey,
+                        Map.Entry::getValue,(a, b)->a,LinkedHashMap::new));
 
         // Skriv til fil
             skrivTilFil("ord_alfabetisk.csv",ordAlfabetisk);
