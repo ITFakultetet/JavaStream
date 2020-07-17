@@ -12,7 +12,7 @@ public class App {
     public static void main(String[] args) {
 
         // Lag to maps - en for ord sortert alfabetisk og en for ord sortert etter hvor mange ganger de forekommer
-        Map<String, Long> ordAlfabetisk = new TreeMap<>(;
+        Map<String, Long> ordAlfabetisk = new TreeMap<>();
         Map<String, Long> ordForekomst;
 
         try {
