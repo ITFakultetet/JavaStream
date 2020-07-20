@@ -3,6 +3,7 @@ package no.itfakultetet;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.nio.file.Files;
+import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.*;
 import java.util.stream.Collectors;
@@ -15,12 +16,24 @@ public class App {
         Map<String, Long> ordAlfabetisk = new TreeMap<>();
         Map<String, Long> ordForekomst;
 
+        //Hent filnavn/bane fra brukers input
+        Scanner sc = new Scanner(System.in);
+        String filNavn;
+        do {
+            System.out.println("Tast inn et filnavn eller \"q\" for å avslute: ");
+            filNavn = sc.nextLine();
+            if (filNavn.equals("q") ) {
+                System.out.println("Avslutter...");
+                System.exit(0);
+            }
+        } while (filNavn.length()==0);
+
         try {
             // Hent ord fra en fil, tell opp og putt i en TreeMap, ordAlfabetisk
-            ordAlfabetisk = Files.lines(Paths.get("war-and-peace.txt"))
+            ordAlfabetisk = Files.lines(Paths.get(filNavn))
                     .map(a -> a.split("[0-9\\s+\\p{P}]"))
                     .flatMap(a -> Arrays.stream(a))
-                    .filter(a -> a.length() > 0 & !a.contains("CHAPTER") & !a.contains("-"))
+                    .filter(a -> a.length() > 0 & !a.contains("CHAPTER") & !a.contains("="))
                     .map(a -> a.toLowerCase())
                     .collect(Collectors.groupingBy(a -> a,TreeMap::new,Collectors.counting()));
         } catch (IOException e) {
@@ -35,8 +48,11 @@ public class App {
                         Map.Entry::getValue,(a, b)->a,LinkedHashMap::new));
 
         // Skriv til fil
-            skrivTilFil("ord_alfabetisk.csv",ordAlfabetisk);
-            skrivTilFil("ord_forekomst.csv",ordForekomst);
+        // Lag et prefiks basert på filnavnet
+        String fil = Paths.get(filNavn).getFileName().toString();
+        String prefix = fil.substring(0,fil.indexOf("."));
+        skrivTilFil(prefix+"_alfabetisk.csv",ordAlfabetisk);
+        skrivTilFil(prefix+"_forekomst.csv",ordForekomst);
 
     }
 
