@@ -28,7 +28,7 @@ public class TripPlanner {
     public static void budget() {
 
         Scanner input = new Scanner(System.in);
-        System.out.print("Hvor mange dager bil du være borte? ");
+        System.out.print("Hvor mange dager vil du være borte? ");
         int noOfDays = input.nextInt();
         System.out.print("Hvor mye, i NOK, planlegger du å bruke? ");
         double amountOfMoney = input.nextDouble();
