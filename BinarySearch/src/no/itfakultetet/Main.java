@@ -18,7 +18,7 @@ public class Main {
         System.out.println(tall.size());
         System.out.println(tall.get(0) + " - " + tall.get(tall.size() - 1));
 
-        Integer finn = 9900230;
+        Integer finn = 999999999;
         Long start = System.currentTimeMillis();
         System.out.println("Tallet " + finn + " er på posisjon: " + binSearch(tall, finn));
         Long stopp = System.currentTimeMillis();
@@ -36,13 +36,12 @@ public class Main {
 
         System.out.println("Tid med for-løkke = "+(stopp2-start2)+ " millis.");
 
-        Boolean funnet = false;
-        if (tall.contains(finn)) {
-            funnet = true;
-        }
+        Long start3 = System.currentTimeMillis();
 
-        System.out.println(funnet);
-        //tall.forEach(System.out::println);
+            System.out.println("Tallet "+finn+" ble funnet på posisjon "+tall.indexOf(finn));
+            System.out.println("Tid med indexOf() = "+(System.currentTimeMillis()-start3)+ " millis.");
+
+            //tall.forEach(System.out::println);
     }
 
 
