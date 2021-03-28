@@ -39,8 +39,8 @@ public class App {
 		Locale bokmaal = new Locale("nb", "NO");
 		Locale nynorsk = new Locale("nn", "NO");
 
-		String kursstartNB = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", bokmaal));
-		String kursstartNN = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd MMMM, yyyy", nynorsk));
+		String kursstartNB = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd. MMMM, yyyy", bokmaal));
+		String kursstartNN = kursstart.format(DateTimeFormatter.ofPattern("EEEE, dd. MMMM, yyyy", nynorsk));
 
 		System.out.println("Kurset starter på : " + kursstartNB);
 		System.out.println("Kurset startar på : " + kursstartNN);
