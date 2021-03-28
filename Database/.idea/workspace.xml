@@ -7,7 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1318e5a-ff00-4d1f-812e-136c1c8a820d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BinarySearch/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../BinarySearch/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BinarySearch/src/no/itfakultetet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../BinarySearch/src/no/itfakultetet/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +40,6 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
@@ -50,7 +50,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Trophonius" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DatoogTid" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -78,6 +78,7 @@
       </list>
     </option>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -229,108 +230,6 @@
     <MESSAGE value="Liten Database App" />
     <option name="LAST_COMMIT_MESSAGE" value="Liten Database App" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1581866832449">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="254" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1600.860@0.0.1600.860" timestamp="1581866832449" />
-    <state x="540" y="234" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582482882624">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="540" y="234" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1600.860@0.0.1600.860" timestamp="1582482882624" />
-    <state x="726" y="177" width="383" height="637" key="#com.intellij.ide.util.MemberChooser" timestamp="1582584865023">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="605" y="147" key="#com.intellij.ide.util.MemberChooser/0.0.1600.860@0.0.1600.860" timestamp="1582043174620" />
-    <state x="726" y="177" width="383" height="637" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1038@0.0.1920.1038" timestamp="1582584865023" />
-    <state x="529" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582054330119">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="529" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1600.860@0.0.1600.860" timestamp="1582054330119" />
-    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1582386747708">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="480" y="167" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1600.860@0.0.1600.860" timestamp="1582386747708" />
-    <state x="528" y="0" key="CommitChangelistDialog2" timestamp="1582604545209">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="440" y="24" key="CommitChangelistDialog2/0.0.1600.860@0.0.1600.860" timestamp="1582389734137" />
-    <state x="528" y="0" key="CommitChangelistDialog2/0.0.1920.1038@0.0.1920.1038" timestamp="1582604545209" />
-    <state x="696" y="273" key="FileChooserDialogImpl" timestamp="1582605460187">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="696" y="273" key="FileChooserDialogImpl/0.0.1920.1038@0.0.1920.1038" timestamp="1582605460187" />
-    <state width="1868" height="670" key="GridCell.Tab.0.bottom" timestamp="1582606768385">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1557" height="354" key="GridCell.Tab.0.bottom/0.0.1600.860@0.0.1600.860" timestamp="1582482802022" />
-    <state width="1868" height="670" key="GridCell.Tab.0.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1582606768385" />
-    <state width="1868" height="670" key="GridCell.Tab.0.center" timestamp="1582606768385">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1557" height="354" key="GridCell.Tab.0.center/0.0.1600.860@0.0.1600.860" timestamp="1582482802021" />
-    <state width="1868" height="670" key="GridCell.Tab.0.center/0.0.1920.1038@0.0.1920.1038" timestamp="1582606768385" />
-    <state width="1868" height="670" key="GridCell.Tab.0.left" timestamp="1582606768384">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1557" height="354" key="GridCell.Tab.0.left/0.0.1600.860@0.0.1600.860" timestamp="1582482802021" />
-    <state width="1868" height="670" key="GridCell.Tab.0.left/0.0.1920.1038@0.0.1920.1038" timestamp="1582606768384" />
-    <state width="1868" height="670" key="GridCell.Tab.0.right" timestamp="1582606768385">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1557" height="354" key="GridCell.Tab.0.right/0.0.1600.860@0.0.1600.860" timestamp="1582482802021" />
-    <state width="1868" height="670" key="GridCell.Tab.0.right/0.0.1920.1038@0.0.1920.1038" timestamp="1582606768385" />
-    <state width="1868" height="330" key="GridCell.Tab.1.bottom" timestamp="1582603965370">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1868" height="330" key="GridCell.Tab.1.bottom/0.0.1920.1038@0.0.1920.1038" timestamp="1582603965370" />
-    <state width="1868" height="330" key="GridCell.Tab.1.center" timestamp="1582603965370">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1868" height="330" key="GridCell.Tab.1.center/0.0.1920.1038@0.0.1920.1038" timestamp="1582603965370" />
-    <state width="1868" height="330" key="GridCell.Tab.1.left" timestamp="1582603965369">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1868" height="330" key="GridCell.Tab.1.left/0.0.1920.1038@0.0.1920.1038" timestamp="1582603965369" />
-    <state width="1868" height="330" key="GridCell.Tab.1.right" timestamp="1582603965370">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state width="1868" height="330" key="GridCell.Tab.1.right/0.0.1920.1038@0.0.1920.1038" timestamp="1582603965370" />
-    <state x="420" y="113" key="NewModule_or_Project.wizard" timestamp="1582605305021">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="420" y="113" key="NewModule_or_Project.wizard/0.0.1920.1038@0.0.1920.1038" timestamp="1582605305021" />
-    <state x="301" y="9" key="SettingsEditor" timestamp="1582127795416">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="301" y="9" key="SettingsEditor/0.0.1600.860@0.0.1600.860" timestamp="1582127795416" />
-    <state x="470" y="198" key="Vcs.Push.Dialog.v2" timestamp="1582604554632">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="392" y="164" key="Vcs.Push.Dialog.v2/0.0.1600.860@0.0.1600.860" timestamp="1582389748290" />
-    <state x="470" y="198" key="Vcs.Push.Dialog.v2/0.0.1920.1038@0.0.1920.1038" timestamp="1582604554632" />
-    <state x="595" y="308" key="com.intellij.ide.util.TipDialog" timestamp="1582583624735">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="496" y="255" key="com.intellij.ide.util.TipDialog/0.0.1600.860@0.0.1600.860" timestamp="1582481532258" />
-    <state x="595" y="308" key="com.intellij.ide.util.TipDialog/0.0.1920.1038@0.0.1920.1038" timestamp="1582583624735" />
-    <state x="525" y="328" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD" timestamp="1582127751965">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="525" y="328" key="com.intellij.jarRepository.RepositoryAttachDialog-DOWNLOAD/0.0.1600.860@0.0.1600.860" timestamp="1582127751965" />
-    <state x="669" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1582203016637">
-      <screen x="0" y="0" width="1920" height="1038" />
-    </state>
-    <state x="669" y="432" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1920.1038@0.0.1920.1038" timestamp="1582203016637" />
-    <state x="496" y="28" width="607" height="804" key="find.popup" timestamp="1581956347541">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="496" y="28" width="607" height="804" key="find.popup/0.0.1600.860@0.0.1600.860" timestamp="1581956347541" />
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup" timestamp="1582387500302">
-      <screen x="0" y="0" width="1600" height="860" />
-    </state>
-    <state x="463" y="180" width="672" height="678" key="search.everywhere.popup/0.0.1600.860@0.0.1600.860" timestamp="1582387500302" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

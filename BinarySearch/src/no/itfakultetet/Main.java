@@ -18,14 +18,14 @@ public class Main {
         System.out.println(tall.size());
         System.out.println(tall.get(0) + " - " + tall.get(tall.size() - 1));
 
-        Integer finn = 999999999;
+        Integer finn = 1234567;
         Long start = System.currentTimeMillis();
         System.out.println("Tallet " + finn + " er på posisjon: " + binSearch(tall, finn));
         Long stopp = System.currentTimeMillis();
         System.out.println("Tid med binærsøk = "+(stopp-start)+ " millis.");
 
         Long start2 = System.currentTimeMillis();
-
+        System.out.println("-".repeat(40));
         for (int j = 0; j < tall.size(); j++) {
             if (finn.equals(tall.get(j))) {
                 System.out.println("Tallet " + finn + " er på posisjon: "+j);
@@ -35,7 +35,7 @@ public class Main {
         Long stopp2 = System.currentTimeMillis();
 
         System.out.println("Tid med for-løkke = "+(stopp2-start2)+ " millis.");
-
+        System.out.println("-".repeat(40));
         Long start3 = System.currentTimeMillis();
 
             System.out.println("Tallet "+finn+" ble funnet på posisjon "+tall.indexOf(finn));
@@ -63,7 +63,7 @@ public class Main {
         }
 
         System.out.println("Gjennomført med "+i+" itereringer.");
-        return -low -1;
+        return low -1;
     }
 
 
